@@ -10,9 +10,6 @@ import { useMediaQuery } from "react-responsive";
 import { useForm, ValidationError } from '@formspree/react';
 import {motion} from 'framer-motion'
 import Link from 'next/link';
-import IMG_1643 from '../app/IMG_1643.png';
-import IMG_1804 from '../app/IMG_1804.png';
-import IMG_1803 from '../app/IMG_1803.png';
 import { useState } from 'react';
 export default function Home() {
   const handleredirect = () => {
@@ -75,7 +72,7 @@ if (state.succeeded) {
       </div>
 
       <div className={styles.center} style={{marginTop:'20vh'}}>
-       <Image src={IMG_1803} style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%'}}/>
+       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%'}}/>
        <h1 className={styles.center1}  style={{width:"45%", marginLeft:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h1>
       </div>
 
@@ -153,7 +150,7 @@ if (state.succeeded) {
       </div>
 
       <div className={styles.center00} style={{marginTop:'20vh'}}>
-       <Image src={IMG_1803} style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"35vh", overflow:'visible',position:'relative', left:'1%'}}/>
+       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"35vh", overflow:'visible',position:'relative', left:'1%'}}/>
        <h3 className={styles.center1}  style={{width:"100%", marginLeft:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h3>
       </div>
 

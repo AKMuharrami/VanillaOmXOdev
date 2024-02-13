@@ -10,9 +10,6 @@ import { useMediaQuery } from "react-responsive";
 import { useForm, ValidationError } from '@formspree/react';
 import {motion} from 'framer-motion'
 import Link from 'next/link';
-import IMG_1643 from '@/app/IMG_1643.png';
-import IMG_1804 from '@/app/IMG_1804.png';
-import IMG_1803 from '@/app/IMG_1803.png';
 import { useState } from 'react';
 export default function Home() {
   const handleredirect = () => {
@@ -75,7 +72,7 @@ if (state.succeeded) {
       </div>
 
       <div className={styles.center0} style={{marginTop:'20vh'}}>
-       <Image src={IMG_1803} style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', right:'1%'}}/>
+       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', right:'1%'}}/>
        <h1 className={styles.center11}  style={{width:"45%", marginRight:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h1>
       </div>
 
@@ -150,7 +147,7 @@ if (state.succeeded) {
       </div>
 
       <div className={styles.center00} style={{marginTop:'20vh'}}>
-       <Image src={IMG_1803} style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"35vh", overflow:'visible',position:'relative', right:'1%'}}/>
+       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"35vh", overflow:'visible',position:'relative', right:'1%'}}/>
        <h2 className={styles.center11}  style={{width:"100%", marginRight:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', fontSize:'6vw' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h2>
       </div>
 
