@@ -4,6 +4,8 @@ import styles from '@/app/page.module.css'
 import  Icon  from '@mdi/react';
 import {mdiFlower} from '@mdi/js';
 import MenuIntroduction from '@/app/menu1ar';
+import MenuIntroduction1 from '@/app/menu1arm';
+
 import Link from 'next/link';
 import { useMediaQuery } from "react-responsive";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -55,7 +57,7 @@ let mproducts= [
       {
         id:0,
         image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707398450627-F2B334F1-7662-49B4-9EC1-7A11C198A723.png",
-        name:" أعواد فانيلا بوربن - بابا نو جيني - درجة أ",
+        name:" أعواد فانيلا بوربن - بابا نو جيني -- درجة أ",
         price:"5-7 Omr",
         animationn:'/products/model/Acar1',
         staticc:'/products/model/car1',
@@ -105,25 +107,25 @@ export default function A1() {
   let mproductslist = mproducts.map((product) => { 
     return(
     <Link key={product.id} href={`/ar/products/${product.no}`} style={{zIndex:2}}>
-      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'53vw', height:'43vh', marginTop:55, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"22px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'10vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'28vh',objectFit:'contain', marginBottom:'-7%',zIndex:0}}></img><br></br>{product.name} <br></br></h3>
+      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:55, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'38vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'10vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'28vh',objectFit:'contain', marginBottom:'-7%',zIndex:0}}></img><br></br>{product.name} <br></br></h3>
       </button></Link>
           )})
         let mproductslist1 = mproducts1.map((product) => { 
             return(
             <Link key={product.id} style={{zIndex:2}} href={`/ar/products/${product.no}`}>
-              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'53vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"20px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-27%',zIndex:0, marginTop:'-20%'}}></img><br></br>{product.name} <br></br></h3>
+              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-22%',zIndex:0, marginTop:'-20%'}}></img><br></br>{product.name} <br></br></h3>
               </button></Link>
                   )})
                   let mproductslist2 = mproducts2.map((product) => { 
                     return(
                     <Link key={product.id} style={{zIndex:2}} href={`/ar/products/${product.no}`}>
-                      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'53vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"20px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-27%',zIndex:0, marginTop:'-20%'}}></img><br></br>{product.name} <br></br></h3>
+                      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-22%',zIndex:0, marginTop:'-20%'}}></img><br></br>{product.name} <br></br></h3>
                       </button></Link>
                           )})
                           let mproductslist3 = mproducts3.map((product) => { 
                             return(
                             <Link key={product.id} style={{zIndex:2}} href={`/ar/products/${product.no}`}>
-                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'53vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"19px", height:'39vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-22%',zIndex:0, marginTop:'-20%'}}></img><br></br>{product.name} <br></br></h3>
+                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-20%',zIndex:0, marginTop:'-17%'}}></img><br></br>{product.name} <br></br></h3>
                               </button></Link>
                                   )})
   let productslist = products.map((product) => { 
@@ -232,7 +234,7 @@ export default function A1() {
         </main>}
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
       <div className={styles.description2} style={{position:'fixed', padding:'3%', marginTop:'-10%', direction:'rtl'}}>
-      <MenuIntroduction/>
+      <MenuIntroduction1/>
         <div className={styles.card3} style={{position:'relative', height:'8vh', alignItems:'center'}}>
           <a
             href="/ar"
@@ -242,7 +244,7 @@ export default function A1() {
             
           >
             
-            <Icon path={mdiFlower } size={.9} />
+            <Icon path={mdiFlower } style={{marginRight:-16, marginLeft:'-10%'}} size={.9} />
             فانيلا عمان
           </a>
         </div>
@@ -254,19 +256,19 @@ export default function A1() {
                     duration: 0.8,
                     delay: .5,
                     ease: [0, 0.71, 0.2, 1.01]}}
-                    style={{direction:'rtl', marginLeft:'10%'}}
+                    style={{direction:'rtl', marginLeft:'7%'}}
                     
                     >
-    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'7vw', direction:'', marginTop:'5%'}}>
+    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'0vw', direction:'', marginTop:'5%'}}>
         {mproductslist}
     </div>
-    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'7vw', direction:'', marginTop:'5vh', marginBottom:'15%'}}>
+    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'0vw', direction:'', marginTop:'25%', marginBottom:'15%'}}>
         {mproductslist1}
     </div>
-    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'7vw', direction:'', marginTop:'5vh', marginBottom:'15%'}}>
+    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'0vw', direction:'', marginTop:'25%', marginBottom:'15%'}}>
         {mproductslist2}
     </div>
-    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'7vw', direction:'', marginTop:'5vh', marginBottom:'35%'}}>
+    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'0vw', direction:'', marginTop:'25%', marginBottom:'35%'}}>
         {mproductslist3}
     </div>
     </motion.div>}

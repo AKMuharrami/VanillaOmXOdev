@@ -133,7 +133,7 @@ if (state.succeeded) {
       <div className={styles.description1} style={{position:'fixed',padding:'3%', paddingTop:'-23%'}}>
         
         <MenuIntroduction/>
-        <div className={styles.card3} style={{position:'relative', height:'8vh', alignItems:'center'}}>
+        <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
           <a
             href="/ar"
             // target="_blank"
@@ -147,7 +147,7 @@ if (state.succeeded) {
       </div>
 
       <div className={styles.center00} style={{marginTop:'20vh'}}>
-       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"35vh", overflow:'visible',position:'relative', right:'1%'}}/>
+       <img  src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"35vh", overflow:'visible',position:'relative', right:'1%'}}/>
        <h2 className={styles.center11}  style={{width:"100%", marginRight:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', fontSize:'6vw' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h2>
       </div>
 
