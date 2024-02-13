@@ -146,8 +146,8 @@ if (state.succeeded) {
         </div>
       </div>
 
-      <div className={styles.center00} style={{marginTop:'20vh'}}>
-       <img  src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"35vh", overflow:'visible',position:'relative', right:'1%'}}/>
+      <div className={styles.center00} style={{marginTop:'11vh'}}>
+       <img  src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', right:'1%'}}/>
        <h2 className={styles.center11}  style={{width:"100%", marginRight:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', fontSize:'6vw' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h2>
       </div>
 
@@ -246,10 +246,10 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="3">عودان</option>
-                              <option value="6">4 أعواد</option>
-                              <option value="14">10 أعواد</option>
-                              <option value='22'>20 عود</option>
+                              <option  value="3.2">عودان</option>
+                              <option value="6.4">4 أعواد</option>
+                              <option value="15.5">10 أعواد</option>
+                              <option value='30'>20 عود</option>
                             </select>
                             </div>
                             <br></br>
@@ -306,10 +306,10 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="3">عودان</option>
-                              <option value="6">4 أعواد</option>
-                              <option value="14">10 أعواد</option>
-                              <option value='22'>20 عود</option>
+                              <option  value="3.2">عودان</option>
+                              <option value="6.4">4 أعواد</option>
+                              <option value="15.5">10 أعواد</option>
+                              <option value='30'>20 عود</option>
                             </select>
                             </div>
                             <br></br>

@@ -44,7 +44,7 @@ export default function Teamm() {
             
           >
             
-            <Icon path={mdiFlower } size={.9} />
+            <Icon path={mdiFlower } style={{marginRight:-16, marginLeft:'-10%'}} size={.9} />
             فانيلا عمان
           </a>
         </div>

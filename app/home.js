@@ -72,7 +72,7 @@ if (state.succeeded) {
       </div>
 
       <div className={styles.center} style={{marginTop:'20vh'}}>
-       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%'}}/>
+       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%'}}/>
        <h1 className={styles.center1}  style={{width:"45%", marginLeft:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h1>
       </div>
 
@@ -149,7 +149,7 @@ if (state.succeeded) {
         </div>
       </div>
 
-      <div className={styles.center00} style={{marginTop:'20vh'}}>
+      <div className={styles.center00} style={{marginTop:'11vh'}}>
        <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', left:'1%'}}/>
        <h3 className={styles.center1}  style={{width:"100%", marginLeft:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h3>
       </div>
@@ -180,7 +180,7 @@ if (state.succeeded) {
         </a>
 
         <a
-          href="/empty"
+          href="/ar"
           className={styles.card}
           // target="_blank"
           rel="noopener noreferrer"
@@ -251,9 +251,9 @@ if (state.succeeded) {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
                               <option  value="3.2">2 beans</option>
-                              <option value="6.2">4 beans</option>
-                              <option value="14">10 beans</option>
-                              <option value='28.5'>20 beans</option>
+                              <option value="6.4">4 beans</option>
+                              <option value="15.5">10 beans</option>
+                              <option value='30'>20 beans</option>
                             </select>
                             </div>
                             <br></br>
@@ -312,9 +312,9 @@ if (state.succeeded) {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
                               <option  value="3.2">2 beans</option>
-                              <option value="6.2">4 beans</option>
-                              <option value="14">10 beans</option>
-                              <option value='28.5'>20 beans</option>
+                              <option value="6.4">4 beans</option>
+                              <option value="15.5">10 beans</option>
+                              <option value='30'>20 beans</option>
                             </select>
                             </div>
                             <br></br>

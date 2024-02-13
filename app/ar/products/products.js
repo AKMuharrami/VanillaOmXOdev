@@ -13,7 +13,7 @@ let mproducts= [
   {
     id:0,
     image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707398450627-F2B334F1-7662-49B4-9EC1-7A11C198A723.png",
-    name:" أعواد فانيلا بوربن - بابا نو جيني - درجة أ",
+    name:" أعواد فانيلا بوربن - بابا نو جيني -- درجة أ",
     price:"5-7 Omr",
     animationn:'/products/model/Acar1',
     staticc:'/products/model/car1',
@@ -57,7 +57,7 @@ let mproducts= [
       {
         id:0,
         image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707398450627-F2B334F1-7662-49B4-9EC1-7A11C198A723.png",
-        name:" أعواد فانيلا بوربن - بابا نو جيني -- درجة أ",
+        name:" أعواد فانيلا بوربن - بابا نو جيني - درجة أ",
         price:"5-7 Omr",
         animationn:'/products/model/Acar1',
         staticc:'/products/model/car1',
@@ -125,7 +125,7 @@ export default function A1() {
                           let mproductslist3 = mproducts3.map((product) => { 
                             return(
                             <Link key={product.id} style={{zIndex:2}} href={`/ar/products/${product.no}`}>
-                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-20%',zIndex:0, marginTop:'-17%'}}></img><br></br>{product.name} <br></br></h3>
+                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-18%',zIndex:0, marginTop:'-17%'}}></img><br></br>{product.name} <br></br></h3>
                               </button></Link>
                                   )})
   let productslist = products.map((product) => { 
@@ -235,7 +235,7 @@ export default function A1() {
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
       <div className={styles.description2} style={{position:'fixed', padding:'3%', marginTop:'-10%', direction:'rtl'}}>
       <MenuIntroduction1/>
-        <div className={styles.card3} style={{position:'relative', height:'8vh', alignItems:'center'}}>
+        <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
           <a
             href="/ar"
             // target="_blank"
