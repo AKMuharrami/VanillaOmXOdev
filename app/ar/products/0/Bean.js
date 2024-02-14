@@ -110,10 +110,10 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="3">عودان</option>
-                              <option value="6">4 أعواد</option>
-                              <option value="14">10 أعواد</option>
-                              <option value='22'>20 عود</option>
+                              <option  value="3.2">عودان</option>
+                              <option value="6.4">4 أعواد</option>
+                              <option value="15.5">10 أعواد</option>
+                              <option value='30'>20 عود</option>
                             </select>
                             </div>
                             <br></br>
@@ -191,10 +191,10 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="3">عودان</option>
-                              <option value="6">4 أعواد</option>
-                              <option value="14">10 أعواد</option>
-                              <option value='22'>20 عود</option>
+                              <option  value=".2">عودان</option>
+                              <option value="6.4">4 أعواد</option>
+                              <option value="15.5">10 أعواد</option>
+                              <option value='30'>20 عود</option>
                             </select>
                             </div>
                             <br></br>

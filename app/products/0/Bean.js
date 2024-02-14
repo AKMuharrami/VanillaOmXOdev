@@ -112,9 +112,9 @@ if (state.succeeded) {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
                               <option  value="3.2">2 beans</option>
-                              <option value="6.2">4 beans</option>
-                              <option value="14">10 beans</option>
-                              <option value='28.5'>20 beans</option>
+                              <option value="6.4">4 beans</option>
+                              <option value="15.5">10 beans</option>
+                              <option value='30'>20 beans</option>
                             </select>
                             </div>
                             <br></br>
@@ -193,9 +193,9 @@ if (state.succeeded) {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
                               <option  value="3.2">2 beans</option>
-                              <option value="6.2">4 beans</option>
-                              <option value="14">10 beans</option>
-                              <option value='28.5'>20 beans</option>
+                              <option value="6.4">4 beans</option>
+                              <option value="15.5">10 beans</option>
+                              <option value='30'>20 beans</option>
                             </select>
                             </div>
                             <br></br>

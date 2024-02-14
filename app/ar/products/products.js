@@ -233,7 +233,7 @@ export default function A1() {
         
         </main>}
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
-      <div className={styles.description2} style={{position:'fixed', padding:'3%', marginTop:'-10%', direction:'rtl'}}>
+      <div className={styles.description2} style={{position:'fixed', padding:'3%', direction:'rtl', marginTop:'-10%', height:'10%', zIndex:2}}>
       <MenuIntroduction1/>
         <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
           <a
@@ -249,7 +249,7 @@ export default function A1() {
           </a>
         </div>
         </div>
-            <div  style={{zIndex:2}}>
+            <div  style={{zIndex:0}}>
             {isTabletOrMobile &&<motion.div  initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
