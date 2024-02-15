@@ -226,20 +226,22 @@ if (state.succeeded) {
                             <br></br>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
+                            <label For='City' style={{color:'white', fontSize:'125%'}}>البلد </label>
+                            <input id='City' name="City" value='عمان'  disabled type='text' style={{marginLeft:'3vw', height:'2.5vh', marginRight:'1vw'}}></input>
                             <label For="Gloc" style={{color:'white', fontSize:'125%'}}>موقع جوجل مابس (إن وجد) </label>
                             <input id="Gloc" name="Gloc" type="url" style={{ marginLeft:'3vw',height:'2.5vh', marginRight:'1vw'}}></input>
-                            <label For='City' style={{color:'white', fontSize:'125%'}}>الولاية </label>
-                            <input id='City' name="City" required type='text' style={{marginLeft:'3vw', height:'2.5vh', marginRight:'1vw'}}></input>
+                            
                             </div>
                             <br></br>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
+                            <label For='City' style={{color:'white', fontSize:'125%'}}>الولاية </label>
+                            <input id='City' name="City" required type='text' style={{marginLeft:'3vw', height:'2.7vh', marginRight:'1vw'}}></input>
                             <label For="Town" style={{color:'white', fontSize:'125%'}}>الحلة </label>
-                            <input type='text' required  name="Town" id='Town' style={{marginLeft:'3vw', marginRight:'1vw'}}></input>
+                            <input type='text' required  name="Town" id='Town' style={{marginLeft:'3vw', height:'2.7vh', marginRight:'1vw'}}></input>
                             <label For='POC' style={{color:'white', fontSize:'125%'}}>مَعْلم سياحي قريب </label>
-                            <input id='POC' name="POC" type='text' style={{marginLeft:'3vw', marginRight:'1vw'}} ></input>
+                            <input id='POC' name="POC" type='text' style={{marginLeft:'3vw', height:'2.7vh', marginRight:'1vw'}} ></input>
                             </div>
-                            <br></br>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
                             <label For="Quantity" style={{color:'white', fontSize:'125%'}}>الكمية </label>
@@ -285,15 +287,18 @@ if (state.succeeded) {
                             <div style={{display:'flex', justifyContent:'space-evenly'}}>
                             <label for="Email" style={{color:'white', fontSize:'100%'}}>الإيميل </label>
                             <input id="Email" name="Email" type='email'style={{marginLeft:'3vw', height:'2vh', width:'25vw', marginRight:'1vw'}}></input>
+                            <label For='City' style={{color:'white', fontSize:'100%'}}>البلد </label>
+                            <input id='City' name="City" value='عمان'  disabled type='text' style={{marginLeft:'3vw',  width:'9.5vw', height:'2vh', marginRight:'1vw'}}></input>
                             <label For='City' style={{color:'white', fontSize:'100%'}}>  الولاية </label>
                             <input id='City' required name="City" type='text' style={{marginLeft:'3vw', height:'2vh', width:'11vw', marginRight:'1vw'}}></input>
-                            <label For="Town" style={{color:'white', fontSize:'100%'}}>الحلة </label>
-                            <input type='text' required name="Town" id='Town' style={{marginLeft:'3vw', height:'2vh', width:'11vw', marginRight:'1vw'}}></input>
+                            
                             </div>
                             <br></br>
+                            <label For="Town" style={{color:'white', fontSize:'100%'}}>الحلة </label>
+                            <input type='text' required name="Town" id='Town' style={{marginLeft:'3vw', height:'2vh', width:'11vw', marginRight:'1vw'}}></input>
                             <div style={{display:'flex',justifyContent:'center'}}>
                             <label For='POC' style={{color:'white', fontSize:'100%'}}>معلم سياحي قريب </label>
-                            <input id='POC' name="POC" type='text' style={{ height:'2vh', marginRight:'1vw'}}></input>
+                            <input id='POC' name="POC" type='text' style={{ height:'2vh',width:'17vw', marginRight:'1vw'}}></input>
                             </div>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
