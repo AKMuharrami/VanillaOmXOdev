@@ -295,9 +295,10 @@ if (state.succeeded) {
                             
                             </div>
                             <br></br>
+
+                            <div style={{display:'flex',justifyContent:'center'}}>
                             <label For="Town" style={{color:'white', fontSize:'100%'}}>الحلة </label>
                             <input type='text' required name="Town" id='Town' style={{marginLeft:'3vw', height:'2vh', width:'11vw', marginRight:'1vw'}}></input>
-                            <div style={{display:'flex',justifyContent:'center'}}>
                             <label For='POC' style={{color:'white', fontSize:'100%'}}>معلم سياحي قريب </label>
                             <input id='POC' name="POC" type='text' style={{ height:'2vh',width:'17vw', marginRight:'1vw'}}></input>
                             </div>
