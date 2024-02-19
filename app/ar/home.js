@@ -148,7 +148,7 @@ if (state.succeeded) {
 
       <div className={styles.center00} style={{marginTop:'11vh'}}>
        <img  src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', right:'1%'}}/>
-       <h2 className={styles.center11}  style={{width:"100%", marginRight:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', fontSize:'6vw' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h2>
+       <h2 className={styles.center11}  style={{width:"100%", marginRight:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', fontSize:'5vw' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h2>
       </div>
 
       <div className={styles.grid} style={{color:'#F2F0DF'}}>
