@@ -91,7 +91,7 @@ if (state.succeeded) {
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
                             <label For='City' style={{color:'white', fontSize:'125%'}}>البلد </label>
-                            <input id='City' name="City" value='عمان'  disabled type='text' style={{marginLeft:'3vw', height:'2.5vh', marginRight:'1vw'}}></input>
+                            <input id='City' name="City" value='عمان'  disabled type='text' style={{marginLeft:'3vw', height:'2.5vh', marginRight:'1vw', width:'8vw'}}></input>
                             <label For="Gloc" style={{color:'white', fontSize:'125%'}}>موقع جوجل مابس (إن وجد) </label>
                             <input id="Gloc" name="Gloc" type="url" style={{ marginLeft:'3vw',height:'2.5vh', marginRight:'1vw'}}></input>
                             
@@ -100,11 +100,11 @@ if (state.succeeded) {
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
                             <label For='City' style={{color:'white', fontSize:'125%'}}>الولاية </label>
-                            <input id='City' name="City" required type='text' style={{marginLeft:'3vw', height:'2.7vh', marginRight:'1vw'}}></input>
+                            <input id='City' name="City" required type='text' style={{marginLeft:'3vw', height:'2.7vh', marginRight:'1vw', width:'10vw'}}></input>
                             <label For="Town" style={{color:'white', fontSize:'125%'}}>الحلة </label>
-                            <input type='text' required  name="Town" id='Town' style={{marginLeft:'3vw', marginRight:'1vw', height:'2.7vh'}}></input>
-                            <label For='POC' style={{color:'white', fontSize:'125%'}}>مَعْلم سياحي قريب </label>
-                            <input id='POC' name="POC" type='text' style={{marginLeft:'3vw', marginRight:'1vw', height:'2.7vh'}} ></input>
+                            <input type='text' required  name="Town" id='Town' style={{marginLeft:'3vw', marginRight:'1vw', height:'2.7vh', width:'10vw'}}></input>
+                            <label For='POC' style={{color:'white', fontSize:'125%'}}>رقم البيت (الشقة)</label>
+                            <input id='POC' name="House" type='text' style={{marginLeft:'3vw', marginRight:'1vw', height:'2.7vh', width:'10vw'}} ></input>
                             </div>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
@@ -183,8 +183,8 @@ if (state.succeeded) {
                             <div style={{display:'flex',justifyContent:'center'}}>
                             <label For="Town" style={{color:'white', fontSize:'100%'}}>الحلة </label>
                             <input type='text' required name="Town" id='Town' style={{marginLeft:'3vw', height:'2vh', width:'11vw', marginRight:'1vw'}}></input>
-                            <label For='POC' style={{color:'white', fontSize:'100%'}}>معلم سياحي قريب </label>
-                            <input id='POC' name="POC" type='text' style={{ height:'2vh', width:'17vw', marginRight:'1vw'}}></input>
+                            <label For='POC' style={{color:'white', fontSize:'100%'}}>رقم البيت (الشقة)</label>
+                            <input id='POC' name="House" type='text' style={{ height:'2vh', width:'17vw', marginRight:'1vw'}}></input>
                             </div>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>

@@ -241,8 +241,7 @@ if (state.succeeded) {
                             <input id='City' name="City" required type='text' style={{marginRight:'2.7vw', height:'2.7vh', width:'8vw',marginLeft:'1vw'}}></input>
                             <label For="Town" style={{color:'white', fontSize:'125%'}}>Town </label>
                             <input type='text' required  name="Town" id='Town' style={{marginRight:'2.7vw', height:'2.7vh', width:'8vw', marginLeft:'1vw'}}></input>
-                            <label For='POC' style={{color:'white', fontSize:'125%'}}>Landmark 
-                            (near you) </label>
+                            <label For='POC' style={{color:'white', fontSize:'125%'}}>House No </label>
                             <input id='POC' name="POC" type='text' style={{marginRight:'2.7vw', height:'2.7vh', width:'8vw',marginLeft:'1vw'}} ></input>
                             </div>
                             <br></br>
@@ -302,8 +301,7 @@ if (state.succeeded) {
                             <div style={{display:'flex',justifyContent:'center'}}>
                             <label For="Town" style={{color:'white', fontSize:'100%'}}>Town </label>
                             <input type='text' required name="Town" id='Town' style={{marginRight:'3vw', height:'2vh', width:'11vw', marginLeft:'1vw'}}></input>
-                            <label For='POC' style={{color:'white', fontSize:'100%'}}>Landmark 
-                            (near you) </label>
+                            <label For='POC' style={{color:'white', fontSize:'100%'}}>House No</label>
                             <input id='POC' name="POC" type='text' style={{ height:'2vh', marginLeft:'1vw'}}></input>
                             </div>
                             <br></br>
