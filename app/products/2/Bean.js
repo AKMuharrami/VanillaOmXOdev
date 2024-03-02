@@ -79,7 +79,7 @@ if (state.succeeded) {
                         <br></br>
                         <form onSubmit={handleSubmit} >
                             <div style={{display:'flex', justifyContent:'center'}}>
-                                <input id='Prod' type="hidden" name="Prod" value="1" style={{marginRight:'3vw', height:'2.5vh'}}></input>
+                                <input id='Prod' type="hidden" name="Prod" value="ُExtract" style={{marginRight:'3vw', height:'2.5vh'}}></input>
                                 <label for="Name" style={{color:'white', fontSize:'125%'}}>Name </label>
                                 <input id='Name' type="text" required name="Name" style={{marginRight:'3vw', height:'2.5vh', marginLeft:'1vw'}}></input>
                                 <label for='Tel' style={{color:'white', fontSize:'125%'}}>Telephone </label>
@@ -162,7 +162,7 @@ if (state.succeeded) {
                         <br></br>
                         <form onSubmit={handleSubmit}>
                             <div style={{display:'flex', justifyContent:'space-evenly'}}>
-                                <input id='Prod' type="hidden" name="Prod" value="1" style={{marginRight:'3vw', height:'2.5vh'}}></input>
+                                <input id='Prod' type="hidden" name="Prod" value="Extract" style={{marginRight:'3vw', height:'2.5vh'}}></input>
                                 <label for="Name" style={{color:'white', fontSize:'100%'}}>Name </label>
                                 <input id='Name' type="text" required name="Name" style={{marginRight:'3vw', height:'2vh', width:'25vw', marginLeft:'1vw'}}></input>
                                 <label for='Tel' style={{color:'white', fontSize:'100%'}}>Telephone </label>
