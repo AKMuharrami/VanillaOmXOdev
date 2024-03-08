@@ -14,7 +14,7 @@ import { useState } from 'react';
 export default function Home() {
   const handleredirect = () => {
     setTimeout(()=> {
-        window.location.href = "/ar"
+        window.location.href = "/"
         
     })
 };
@@ -33,7 +33,7 @@ const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const [Quantity, SetQuantity] = useState("2.5")
+  const [Quantity, SetQuantity] = useState("1.5")
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
     handleredirect();
@@ -43,7 +43,7 @@ if (state.succeeded) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-        <Typography id="modal-modal-title" variant="h6" sx={{ direction:'rtl', color:'Blue'}} component="h2">
+          <Typography id="modal-modal-title" variant="h6" sx={{ direction:'rtl', color:'Blue'}} component="h2">
             شكرا لك
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 , color:'black', direction:'rtl'}}>
@@ -53,9 +53,9 @@ if (state.succeeded) {
       </Modal>
 }
   return (
-    <div style={{overflow:'hidden', direction:'rtl'}}>
-        {isDesktopOrLaptop &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)'}}>
-      <div className={styles.description} style={{position:'fixed'}}>
+    <div style={{overflow:'hidden'}}>
+      {isDesktopOrLaptop &&<main className={styles.main} style={{background:'rgba(10, 54, 119, 0.2)'}}>
+      <div className={styles.description} style={{position:'fixed',direction:'rtl'}}>
         
         <MenuIntroduction/>
         <div className={styles.card1}>
@@ -70,147 +70,11 @@ if (state.succeeded) {
           </a>
         </div>
       </div>
-
-      <div className={styles.center0} style={{marginTop:'20vh'}}>
-       <Image src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', right:'1%'}}/>
-       <h1 className={styles.center11}  style={{width:"45%", marginRight:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h1>
-      </div>
-
-      <div className={styles.grid} style={{color:'#F2F0DF'}}>
-        <a
-          href="/ar/products"
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            المنتجات <span>-&gt;</span>
-          </h2>
-          <p>انقر لتصفح جميع المنتجات</p>
-        </a>
-
-        <a
-          href="/ar/about"
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            عنّا <span>-&gt;</span>
-          </h2>
-          <p>انقر لتعرف المزيد عنّا وعن خططنا ونشاطنا الذي نعمل عليه ونسعى إليه. &nbsp;</p>
-        </a>
-
-        <a
-          href="/"
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            الإنجليزية <span>-&gt;</span>
-          </h2>
-          <p>انقر لتفتح النسخة الإنجليزية من الموقع</p>
-        </a>
-
-        <a
-          href="/ar"
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            قريبا.. <span>-&gt;</span>
-          </h2>
-          <p>
-            ...
-          </p>
-        </a>
-      </div>
-      
-    </main>}
-    {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)'}}>
-      <div className={styles.description1} style={{position:'fixed',padding:'3%', paddingTop:'-23%'}}>
-        
-        <MenuIntroduction/>
-        <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
-          <a
-            href="/ar"
-            // target="_blank"
-            rel="noopener noreferrer"
-          >
-            
-            <Icon path={mdiFlower } style={{marginRight:-10, marginLeft:'-10%'}}size={.9} />
-            فانيلا عمان
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center00} style={{marginTop:'11vh'}}>
-       <img  src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', right:'1%'}}/>
-       <h2 className={styles.center11}  style={{width:"100%", marginRight:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', fontSize:'5vw' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h2>
-      </div>
-
-      <div className={styles.grid} style={{color:'#F2F0DF'}}>
-        <a
-          href="/ar/products"
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 style={{fontSize:'5.5vw'}}>
-            المنتجات <span>-&gt;</span>
-          </h2>
-          <p>انقر لتصفح جميع المنتجات</p>
-        </a>
-
-        <a
-          href="/ar/about"
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 style={{fontSize:'5.5vw'}}>
-            عنّا <span>-&gt;</span>
-          </h2>
-          <p>انقر لتعرف المزيد عنا&nbsp;</p>
-        </a>
-
-        <a
-          href="/"
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 style={{fontSize:'5.5vw'}}>
-          الإنجليزية <span>-&gt;</span>
-          </h2>
-          <p>انقر لتفتح النسخة الإنجليزية من الموقع</p>
-        </a>
-
-        <a
-          href=""
-          className={styles.card}
-          // target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 style={{fontSize:'5.5vw'}}>
-            قريبا... <span>-&gt;</span>
-          </h2>
-          <p>
-            ...
-          </p>
-        </a>
-      </div>
-      
-    </main>}
-    <main className={styles.main} style={{background:'rgba(10, 54, 119, 0.2)'}}>
-    <div className={styles.center1} style={{display:'block'}}>
-    {isDesktopOrLaptop &&<div>
-                    <div style={{marginTop:'-7vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'7vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)'}}>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'30vh', marginRight:'2vw', marginTop:'4%', marginLeft:'-5%'}}></img>
+      {isDesktopOrLaptop &&<div>
+        <div style={{marginTop:'5vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'5vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)', direction:'rtl'}}>
+        <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png" style={{height:'55vh', marginLeft:'3vw', marginTop:'0%', marginRight:'5%',objectFit:"cover"}}></img>
                     <div style={{marginLeft:'5vw'}}>
-                        <h1 style={{color:'white', textAlign:'center', marginTop:'-7%', marginBottom:'6%', marginLeft:'35%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا (بوربن) - درجة أ <br></br> بابوا نيو جيني</h1>
+                        <h1 style={{color:'white', textAlign:'center', marginTop:'-8%', marginBottom:'6%', marginLeft:'39%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا (بوربن) - درجة أ <br></br>زنجبار</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>اطلب المنتج</h2>
                         <br></br>
                         <form onSubmit={handleSubmit} >
@@ -248,11 +112,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="2.5">عودان</option>
-                              <option value="5">4 أعواد</option>
-                              <option value="6">5 أعواد</option>
-                              <option value="12">10 أعواد</option>
-                              <option value='23'>20 عود</option>
+                              <option  value="1.5">عودان</option>
+                              <option value="3">4 أعواد</option>
+                              <option value="3.750">5 أعواد</option>
+                              <option value="7.5">10 أعواد</option>
+                              <option value='14'>20 عود</option>
                             </select>
                             </div>
                             <br></br>
@@ -267,15 +131,36 @@ if (state.succeeded) {
                     </form>
                 </div>
               </div>
-              <h4 style={{color:'white',marginRight:'7vw', marginTop:'1%'}}>*سيتم التواصل معكم لتأكيد وإكمال عملية الشراء خلال 6 ساعات إن شاء الله تعالى، والدفع سيكون عند الاستلام. </h4>
+              <h4 style={{color:'white',marginRight:'12vh', marginTop:'1%', marginBottom:'1%',direction:'rtl'}}>*سيتم التواصل معكم لتأكيد وإكمال عملية الشراء خلال 6 ساعات إن شاء الله تعالى، والدفع سيكون عند الاستلام. </h4>
               </div>}
-              {isTabletOrMobile && <div> <div style={{marginTop:'-7vh', backgroundColor:'rgba(78, 53, 36, 0.5)', padding:'5vh',paddingTop:'3vh',paddingBottom:'3vh', borderRadius:'1%'}}>
-              <h2 style={{color:'white', textAlign:'center', marginTop:'2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا <br></br>  بابوا نيو جيني- (بوربن)  درجة أ</h2>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'21vh', marginRight:'3vw'}}></img>
+              <hr style={{maxWidth:"100%", width:"100%"}}></hr>
+    </main>}
+    {isTabletOrMobile &&<main className={styles.main1} style={{background:'rgba(10, 54, 119, 0.2 )'}}>
+      <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%', direction:'rtl'}}>
+        
+        <MenuIntroduction/>
+        <div className={styles.card3} style={{position:'relative', height:'7vh', alignItems:'center'}}>
+          <a
+            href="/ar"
+            // target="_blank"
+            rel="noopener noreferrer"
+            
+            
+          >
+            
+            <Icon path={mdiFlower } style={{marginTop:'0%'}}size={.9} />
+            فانيلا عمان
+          </a>
+        </div>
+      </div>
+    </main>}
+              {isTabletOrMobile && <div> <div style={{marginTop:'-89vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'1.75vh', borderRadius:'1%'}}>
+              <h2 style={{color:'white', textAlign:'center', marginTop:'-2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا <br></br>(بوربن)  -زنجبار-  درجة أ -</h2>
+              <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png" style={{height:'40vh', marginLeft:'15vw', marginTop:'-27%', marginBottom:'-19%',objectFit:'cover',rotate:'80deg'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h2 style={{color:'white', textAlign:'center', fontSize:'120%', marginTop:'3%'}}>اطلب المنتج</h2>
                         <br></br>
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} style={{direction:'rtl'}}>
                             <div style={{display:'flex', justifyContent:'space-evenly'}}>
                                 <input id='Prod' type="hidden" name="Prod" value="1" style={{marginLeftt:'3vw', height:'2.5vh'}}></input>
                                 <label for="Name" style={{color:'white', fontSize:'100%'}}>الاسم </label>
@@ -295,7 +180,6 @@ if (state.succeeded) {
                             
                             </div>
                             <br></br>
-
                             <div style={{display:'flex',justifyContent:'center'}}>
                             <label For="Town" style={{color:'white', fontSize:'100%'}}>الحلة </label>
                             <input type='text' required name="Town" id='Town' style={{marginLeft:'3vw', height:'2vh', width:'11vw', marginRight:'1vw'}}></input>
@@ -313,11 +197,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="2.5">عودان</option>
-                              <option value="5">4 أعواد</option>
-                              <option value="6">5 أعواد</option>
-                              <option value="12">10 أعواد</option>
-                              <option value='23'>20 عود</option>
+                              <option  value="1.5">عودان</option>
+                              <option value="3">4 أعواد</option>
+                              <option value="3.750">5 أعواد</option>
+                              <option value="7.5">10 أعواد</option>
+                              <option value='14'>20 عود</option>
                             </select>
                             </div>
                             <br></br>
@@ -332,7 +216,9 @@ if (state.succeeded) {
                     </form>
                 </div>
                 </div>
-                <h6 style={{color:'white',marginRight:'9vw', width:'80%',marginTop:'1%'}}>*سيتم التواصل معكم لتأكيد وإكمال عملية الشراء خلال 6 ساعات إن شاء الله تعالى، والدفع سيكون عند الاستلام. </h6>
+                <div style={{background:'rgba(10, 54, 119, 0.1 )', paddingTop:'2%', paddingBottom:'20%'}}>
+                <h6 style={{color:'white',marginRight:'1vw', marginTop:'1%', direction:'rtl'}}>*سيتم التواصل معكم لتأكيد وإكمال عملية الشراء خلال 6 ساعات إن شاء الله تعالى، والدفع سيكون عند الاستلام. </h6>
+                </div>
               </div>}
       {/* <div className={styles.grid1} style={{marginTop:''}}>
       <a
@@ -391,9 +277,6 @@ if (state.succeeded) {
      </a>
         </div>
        */}
-       </div>
-      <hr style={{maxWidth:"100%", width:"100%"}}></hr>
-    </main>
     </div>
   )
 }

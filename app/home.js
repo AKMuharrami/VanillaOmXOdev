@@ -213,7 +213,7 @@ if (state.succeeded) {
                     <div style={{marginTop:'-7vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'7vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)'}}>
                     <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'30vh', marginLeft:'3vw', marginTop:'5%', marginRight:'-7%'}}></img>
                     <div style={{marginLeft:'5vw'}}>
-                        <h1 style={{color:'white', textAlign:'center', marginTop:'-7%', marginBottom:'6%', marginRight:'57%'}}>Bourbon (Planifolia) Vanilla beans</h1>
+                        <h1 style={{color:'white', textAlign:'center', marginTop:'-7%', marginBottom:'6%', marginRight:'57%'}}>Bourbon (Planifolia) Vanilla beans - PNG</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>Issue Order</h2>
                         <br></br>
                         <form onSubmit={handleSubmit} >
@@ -273,7 +273,7 @@ if (state.succeeded) {
               <h4 style={{color:'white',marginLeft:'6.5vw', marginTop:'1%'}}>*You will be contacted within 6 hours to confirm the order In Sha Allah, and payment will be received on deleivery.</h4>
               </div>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-10vh', backgroundColor:'rgba(78, 53, 36, 0.5)', padding:'5vh',paddingTop:'3vh',paddingBottom:'3vh', borderRadius:'1%'}}>
-              <h2 style={{color:'white', textAlign:'center', marginTop:'5%', marginBottom:'3%', marginRight:'0%'}}>Bourbon (Planifolia)<br></br> Vanilla beans</h2>
+              <h2 style={{color:'white', textAlign:'center', marginTop:'5%', marginBottom:'3%', marginRight:'0%'}}>Bourbon (Planifolia) <br></br>Vanilla beans - PNG</h2>
                     <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'21vh', marginLeft:'1vw', marginBottom:'3%'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h3 style={{color:'white', textAlign:'center'}}>Issue Order</h3>

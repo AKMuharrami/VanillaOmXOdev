@@ -74,7 +74,7 @@ if (state.succeeded) {
         <div style={{marginTop:'5vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'5vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)', direction:'rtl'}}>
                     <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'30vh', marginRight:'2vw', marginTop:'4%', marginLeft:'-5%'}}></img>
                     <div style={{marginLeft:'5vw'}}>
-                        <h1 style={{color:'white', textAlign:'center', marginTop:'-8%', marginBottom:'6%', marginLeft:'39%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا (بوربن) - درجة أ</h1>
+                        <h1 style={{color:'white', textAlign:'center', marginTop:'-8%', marginBottom:'4%', marginLeft:'39%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا (بوربن) - درجة أ <br></br> بابوا نيو جيني</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>اطلب المنتج</h2>
                         <br></br>
                         <form onSubmit={handleSubmit} >
@@ -155,7 +155,7 @@ if (state.succeeded) {
       </div>
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-89vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'1.75vh', borderRadius:'1%'}}>
-              <h2 style={{color:'white', textAlign:'center', marginTop:'-2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا <br></br>(بوربن) درجة أ</h2>
+              <h2 style={{color:'white', textAlign:'center', marginTop:'-2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا <br></br>  بابوا نيو جيني- (بوربن)  درجة أ</h2>
                     <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'21vh', marginLeft:'-4vw'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h2 style={{color:'white', textAlign:'center', fontSize:'120%', marginTop:'3%'}}>اطلب المنتج</h2>

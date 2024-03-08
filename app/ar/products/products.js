@@ -28,7 +28,7 @@ let mproducts= [
         price:"5-7 Omr",
         animationn:'/products/model/Acar1',
         staticc:'/products/model/car1',
-        no:1
+        no:""
     }
         ]
         let mproducts2= [
@@ -45,12 +45,12 @@ let mproducts= [
             let mproducts3= [
               {
                 id:3,
-                image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707478007856-A4B759BA-2C52-4A67-BAEC-35DC06A96CD1.png",
-                name:" بورد فانيلا طبيعي - 100% أعواد فانيلا مجففة - درجة أ",
+                image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png",
+                name:" أعواد فانيلا بوربن - زنجبار - درجة أ",
                 price:"5-7 Omr",
                 animationn:'/products/model/Acar1',
                 staticc:'/products/model/car1',
-                no:""
+                no:"3"
             }
                 ]
     let products= [
@@ -70,7 +70,7 @@ let mproducts= [
       price:"5-7 Omr",
       animationn:'/products/model/Acar1',
       staticc:'/products/model/car1',
-      no:1
+      no:""
   },
   {
     id:2,
@@ -83,12 +83,12 @@ let mproducts= [
 },
 {
   id:3,
-  image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707478007856-A4B759BA-2C52-4A67-BAEC-35DC06A96CD1.png",
-  name:" بورد فانيلا طبيعي - 100% أعواد فانيلا مجففة - درجة أ",
+  image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png",
+  name:" أعواد فانيلا بوربن - زنجبار - درجة أ",
   price:"5-7 Omr",
   animationn:'/products/model/Acar1',
   staticc:'/products/model/car1',
-  no:""
+  no:"3"
 },
   
   
@@ -125,7 +125,7 @@ export default function A1() {
                           let mproductslist3 = mproducts3.map((product) => { 
                             return(
                             <Link key={product.id} style={{zIndex:2}} href={`/ar/products/${product.no}`}>
-                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-18%',zIndex:0, marginTop:'-17%'}}></img><br></br>{product.name} <br></br></h3>
+                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'33vh',objectFit:'contain', marginBottom:'-12%',zIndex:0, marginTop:'3%'}}></img><br></br>{product.name} <br></br></h3>
                               </button></Link>
                                   )})
   let productslist = products.map((product) => { 
