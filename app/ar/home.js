@@ -108,9 +108,9 @@ if (state.succeeded) {
           rel="noopener noreferrer"
         >
           <h2>
-            الإنجليزية <span>-&gt;</span>
+            English <span>-&gt;</span>
           </h2>
-          <p>انقر لتفتح النسخة الإنجليزية من الموقع</p>
+          <p>Click for the English site</p>
         </a>
 
         <a
