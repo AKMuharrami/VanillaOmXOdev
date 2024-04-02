@@ -112,11 +112,16 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="1.5">عودان</option>
+                              {/* <option  value="1.5">عودان</option>
                               <option value="3">4 أعواد</option>
                               <option value="3.750">5 أعواد</option>
                               <option value="7.5">10 أعواد</option>
-                              <option value='14'>20 عود</option>
+                              <option value='14'>20 عود</option> */}
+                              <option  value="1.35">عودان</option>
+                              <option value="2.7">4 أعواد</option>
+                              <option value="3.375">5 أعواد</option>
+                              <option value="6.75">10 أعواد</option>
+                              <option value='12.6'>20 عود</option>
                             </select>
                             </div>
                             <br></br>
@@ -197,11 +202,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="1.5">عودان</option>
-                              <option value="3">4 أعواد</option>
-                              <option value="3.750">5 أعواد</option>
-                              <option value="7.5">10 أعواد</option>
-                              <option value='14'>20 عود</option>
+                              <option  value="1.35">عودان</option>
+                              <option value="2.7">4 أعواد</option>
+                              <option value="3.375">5 أعواد</option>
+                              <option value="6.75">10 أعواد</option>
+                              <option value='12.6'>20 عود</option>
                             </select>
                             </div>
                             <br></br>

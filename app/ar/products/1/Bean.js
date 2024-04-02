@@ -112,9 +112,9 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="6">50 مل</option>
-                              <option value="11.800">100 مل</option>
-                              <option value="23.400">200 مل</option>
+                              <option  value="5.4">50 مل</option>
+                              <option value="10.620">100 مل</option>
+                              <option value="21.060">200 مل</option>
                               {/* <option value="12">10 أعواد</option>
                               <option value='23'>20 عود</option> */}
                             </select>
@@ -197,9 +197,12 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                               <option  value="6">50 مل</option>
+                               {/* <option  value="6">50 مل</option>
                               <option value="11.800">100 مل</option>
-                              <option value="23.400">200 مل</option>
+                              <option value="23.400">200 مل</option> */}
+                              <option  value="5.4">50 مل</option>
+                              <option value="10.620">100 مل</option>
+                              <option value="21.060">200 مل</option>
                               {/* <option value="12">10 أعواد</option>
                               <option value='23'>20 عود</option> */}
                             </select>

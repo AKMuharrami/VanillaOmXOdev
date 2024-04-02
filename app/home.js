@@ -251,11 +251,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
-                              <option  value="2.5">2 beans</option>
-                              <option value="5">4 beans</option>
-                              <option value="6">5 beans</option>
-                              <option value="12">10 beans</option>
-                              <option value='23'>20 beans</option>
+                              <option  value="2.25">2 beans</option>
+                              <option value="4.5">4 beans</option>
+                              <option value="5.4">5 beans</option>
+                              <option value="10.8">10 beans</option>
+                              <option value='20.7'>20 beans</option>
                             </select>
                             </div>
                             <br></br>
@@ -315,11 +315,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
-                              <option  value="2.5">2 beans</option>
-                              <option value="5">4 beans</option>
-                              <option value="6">5 beans</option>
-                              <option value="12">10 beans</option>
-                              <option value='23'>20 beans</option>
+                              <option  value="2.25">2 beans</option>
+                              <option value="4.5">4 beans</option>
+                              <option value="5.4">5 beans</option>
+                              <option value="10.8">10 beans</option>
+                              <option value='20.7'>20 beans</option>
                             </select>
                             </div>
                             <br></br>

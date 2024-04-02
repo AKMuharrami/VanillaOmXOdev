@@ -38,7 +38,7 @@ let mproducts= [
             price:"5-7 Omr",
             animationn:'/products/model/Acar1',
             staticc:'/products/model/car1',
-            no:2
+            no:""
         }
             ]
             let mproducts3= [
@@ -76,7 +76,7 @@ let mproducts= [
               price:"5-7 Omr",
               animationn:'/ar/products/model/Acar3',
               staticc:'/ar/products/model/car3',
-              no:2
+              no:""
           },
           {id:3,
               image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png",
