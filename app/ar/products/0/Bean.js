@@ -33,7 +33,7 @@ const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const [Quantity, SetQuantity] = useState("2.5")
+  const [Quantity, SetQuantity] = useState("2.25")
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
     handleredirect();
