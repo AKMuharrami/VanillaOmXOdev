@@ -33,7 +33,7 @@ const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const [Quantity, SetQuantity] = useState("5.4")
+  const [Quantity, SetQuantity] = useState("6")
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
     handleredirect();
@@ -112,12 +112,12 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
-                              {/* <option  value="6">50 ml</option>
+                              <option  value="6">50 ml</option>
                               <option value="11.800">100 ml</option>
-                              <option value="23.400">200 ml</option> */}
-                              <option  value="5.4">50 ml</option>
+                              <option value="23.400">200 ml</option>
+                              {/* <option  value="5.4">50 ml</option>
                               <option value="10.620">100 ml</option>
-                              <option value="21.060">200 ml</option>
+                              <option value="21.060">200 ml</option> */}
                               {/* <option value="12">10 beans</option>
                               <option value='23'>20 beans</option> */}
                             </select>
@@ -200,9 +200,12 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
-                             <option  value="5.4">50 ml</option>
+                             {/* <option  value="5.4">50 ml</option>
                               <option value="10.620">100 ml</option>
-                              <option value="21.060">200 ml</option>
+                              <option value="21.060">200 ml</option> */}
+                              <option  value="6">50 ml</option>
+                              <option value="11.800">100 ml</option>
+                              <option value="23.400">200 ml</option>
                               {/* <option value="12">10 beans</option>
                               <option value='23'>20 beans</option> */}
                             </select>

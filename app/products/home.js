@@ -49,7 +49,7 @@ let mproducts= [
                 price:"5-7 Omr",
                 animationn:'/products/model/Acar1',
                 staticc:'/products/model/car1',
-                no:"3"
+                no:""
             }
                 ]
     let products= [
@@ -84,7 +84,7 @@ let mproducts= [
               price:"5-7 Omr",
               animationn:'/ar/products/model/Acar4',
               staticc:'/ar/products/model/car4',
-              no:"3"
+              no:""
           },
   
   

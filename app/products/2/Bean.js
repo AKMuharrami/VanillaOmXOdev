@@ -112,9 +112,9 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
-                              <option  value="6">50 ml</option>
-                              <option value="11.800">100 ml</option>
-                              <option value="23.400">200 ml</option>
+                              <option  value="5">50 ml</option>
+                              <option value="10">100 ml</option>
+                              <option value="19.7">200 ml</option>
                               {/* <option value="12">10 beans</option>
                               <option value='23'>20 beans</option> */}
                             </select>
@@ -197,9 +197,9 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
-                              <option  value="6">50 ml</option>
-                              <option value="11.800">100 ml</option>
-                              <option value="23.400">200 ml</option>
+                              <option  value="5">50 ml</option>
+                              <option value="10">100 ml</option>
+                              <option value="19.7">200 ml</option>
                               {/* <option value="12">10 beans</option>
                               <option value='23'>20 beans</option> */}
                             </select>
