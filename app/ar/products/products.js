@@ -133,7 +133,7 @@ export default function A1() {
               <Link key={product.id} href={`/ar/products/${product.no}`} style={{marginLeft:'30%', zIndex:3}}>
                   <button key={product.id} style={{background:'rgb(255, 255, 255, 0)', border:'0px',borderColor:'black', width:'10vw', height:'12vh', marginTop:35, marginBottom:"10%", marginRight:'0%', cursor:'pointer'}}>
                     
-                      <h3 className="cairo" style={{background:'rgba(250, 250, 250, .15)',WebkitTextStroke: '.3  px black' , color:'darkcyan',textShadow: '1px 1px 10px rgb(210 211 269/ 90%)',borderRadius:'25px',fontSize:"18px", height:'55vh',width:'20vw',textAlign:'center',lineHeight:2, paddingBottom:'7vh', paddingTop:'.0vh', marginTop:'4vh'}}><Image width={180} height={360} quality={75} src={product.image} alt=''  style={{width:'18vw', height:'36vh',objectFit:'contain', marginBottom:'0vh'}}></Image>{product.name} <br></br></h3>
+                      <h3 className="cairo" style={{background:'rgba(250, 250, 250, .15)',WebkitTextStroke: '.3  px black' , color:'darkcyan',textShadow: '1px 1px 10px rgb(210 211 269/ 90%)',borderRadius:'25px',fontSize:"18px", height:'55vh',width:'20vw',textAlign:'center',lineHeight:2, paddingBottom:'7vh', paddingTop:'.0vh', marginTop:'4vh'}}><Image width={180} height={360} quality={85} src={product.image} alt=''  style={{width:'18vw', height:'36vh',objectFit:'contain', marginBottom:'0vh'}}></Image>{product.name} <br></br></h3>
                       </button></Link>
           )})
   return (
