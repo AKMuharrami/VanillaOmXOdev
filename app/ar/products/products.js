@@ -39,7 +39,7 @@ let mproducts= [
             price:"5-7 Omr",
             animationn:'/products/model/Acar1',
             staticc:'/products/model/car1',
-            no:""
+            no:2
         }
             ]
             let mproducts3= [
@@ -79,7 +79,7 @@ let mproducts= [
     price:"5-7 Omr",
     animationn:'/products/model/Acar1',
     staticc:'/products/model/car1',
-    no:""
+    no:2
 },
 {
   id:3,
@@ -168,7 +168,7 @@ export default function A1() {
                     ease: [0, 0.71, 0.2, 1.01]}}
                     style={{direction:'rtl'}}
                     >
-    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'-1vw', direction:''}}>
+    <div style={{display:'flex', justifyContent:'space-around', marginLeft:'45vw', direction:''}}>
         {productslist}
     </div>
     </motion.div>}

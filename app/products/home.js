@@ -22,7 +22,7 @@ let mproducts= [
     let mproducts1= [
       {
         id:0,
-        image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708965707995-78866F03-BC70-47E0-B081-D46FB3B685F9.png",
+        image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745450-829A019A-E480-47A5-97D4-7BE2107A88DB.png",
         name:"Vanilla Paste (alcohol free)",
         price:"5-7 Omr",
         animationn:'/products/model/Acar1',
@@ -33,12 +33,12 @@ let mproducts= [
         let mproducts2= [
           {
             id:0,
-            image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png",
+            image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745305-5716920C-2691-4147-ABDE-9C225D9F5681.png",
             name:"Vanilla Extract (alcohol free)",
             price:"5-7 Omr",
             animationn:'/products/model/Acar1',
             staticc:'/products/model/car1',
-            no:""
+            no:2
         }
             ]
             let mproducts3= [
@@ -63,7 +63,7 @@ let mproducts= [
           no:0
       },
           {id:1,
-              image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708965707995-78866F03-BC70-47E0-B081-D46FB3B685F9.png",
+              image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745450-829A019A-E480-47A5-97D4-7BE2107A88DB.png",
               name:"Vanilla Paste (alcohol free)",
               price:"5-7 Omr",
               animationn:'/ar/products/model/Acar2',
@@ -71,12 +71,12 @@ let mproducts= [
               no:1
           },
           {id:2,
-              image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png",
+              image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745305-5716920C-2691-4147-ABDE-9C225D9F5681.png",
               name:"Vanilla Extract (alcohol free)",
               price:"5-7 Omr",
               animationn:'/ar/products/model/Acar3',
               staticc:'/ar/products/model/car3',
-              no:""
+              no:2
           },
           {id:3,
               image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png",
@@ -163,7 +163,7 @@ export default function A1() {
                     delay: .5,
                     ease: [0, 0.71, 0.2, 1.01]}}
                     >
-    <div style={{display:'flex', justifyContent:'space-around', marginRight:'-1vw', direction:''}}>
+    <div style={{display:'flex', justifyContent:'space-around', marginRight:'45vw', direction:''}}>
         {productslist}
     </div>
     </motion.div>}

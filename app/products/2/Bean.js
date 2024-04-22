@@ -72,7 +72,7 @@ if (state.succeeded) {
       </div>
       {isDesktopOrLaptop &&<div>
                     <div style={{marginTop:'-2vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'7vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)'}}>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png" style={{height:'40vh', marginLeft:'vw', marginTop:'5%', marginRight:'-7%'}}></img>
+                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745305-5716920C-2691-4147-ABDE-9C225D9F5681.png" style={{height:'40vh', marginLeft:'vw', marginTop:'5%', marginRight:'-7%'}}></img>
                     <div style={{marginLeft:'5vw'}}>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                         <h1 style={{color:'white', textAlign:'center', marginTop:'-7%', marginBottom:'6%', marginRight:'57%'}}>Alcohol free Vanilla Extract</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>Issue Order</h2>
@@ -156,7 +156,7 @@ if (state.succeeded) {
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-93vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'3vh', borderRadius:'1%'}}>
               <h2 style={{color:'white', textAlign:'center', marginTop:'7%', marginBottom:'6%', marginRight:'0%'}}>Alcohol free <br></br>Vanilla Extract</h2>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png" style={{height:'25vh', marginLeft:'11vw', marginTop:'0%'}}></img>
+                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745305-5716920C-2691-4147-ABDE-9C225D9F5681.png" style={{height:'25vh', marginLeft:'11vw', marginTop:'0%'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h3 style={{color:'white', textAlign:'center', marginTop:'3%'}}>Issue Order</h3>
                         <br></br>
