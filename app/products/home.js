@@ -103,25 +103,25 @@ export default function A1() {
   let mproductslist = mproducts.map((product) => { 
     return(
     <Link key={product.id} href={`/products/${product.no}`} style={{zIndex:2}}>
-      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:55, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'38vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'28vh',objectFit:'contain', marginBottom:'-3%',zIndex:0}}></img><br></br>{product.name} <br></br></h3>
+      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:55, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'38vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><Image width={225} height={200} quality={55} src={product.image} alt='' style={{width:'55vw', height:'28vh',objectFit:'contain', marginBottom:'-3%',zIndex:0}}></Image><br></br>{product.name} <br></br></h3>
       </button></Link>
           )})
         let mproductslist1 = mproducts1.map((product) => { 
             return(
             <Link key={product.id} style={{zIndex:2}} href={`/products/${product.no}`}>
-              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-20%',zIndex:0, marginTop:'-20%'}}></img><br></br>{product.name} <br></br></h3>
+              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><Image width={225} height={200} quality={55} src={product.image} alt='' style={{height:'40vh',objectFit:'contain', marginBottom:'-20%',zIndex:0, marginTop:'-20%'}}></Image><br></br>{product.name} <br></br></h3>
               </button></Link>
                   )})
                   let mproductslist2 = mproducts2.map((product) => { 
                     return(
                     <Link key={product.id} style={{zIndex:2}} href={`/products/${product.no}`}>
-                      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'40vh',objectFit:'contain', marginBottom:'-20%',zIndex:0, marginTop:'-20%'}}></img><br></br>{product.name} <br></br></h3>
+                      <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-55, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'37vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><Image width={225} height={200} quality={55} src={product.image} alt='' style={{height:'40vh',objectFit:'contain', marginBottom:'-20%',zIndex:0, marginTop:'-20%'}}></Image><br></br>{product.name} <br></br></h3>
                       </button></Link>
                           )})
                           let mproductslist3 = mproducts3.map((product) => { 
                             return(
                             <Link key={product.id} style={{zIndex:2}} href={`/products/${product.no}`}>
-                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><img src={product.image} alt='' style={{width:'55vw', height:'33vh',objectFit:'contain', marginBottom:'-12%',zIndex:0, marginTop:'3%'}}></img><br></br>{product.name} <br></br></h3>
+                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginLeft:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"15px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><Image width={225} height={200} quality={55} src={product.image} alt='' style={{width:'55vw', height:'33vh',objectFit:'contain', marginBottom:'-12%',zIndex:0, marginTop:'3%'}}></Image><br></br>{product.name} <br></br></h3>
                               </button></Link>
                                   )})
   let productslist = products.map((product) => { 
@@ -129,7 +129,7 @@ export default function A1() {
               <Link key={product.id} href={`/products/${product.no}`} style={{marginRight:'30%', zIndex:3}}>
                   <button key={product.id} style={{background:'rgb(255, 255, 255, 0)', border:'0px',borderColor:'black', width:'10vw', height:'12vh', marginTop:35, marginBottom:"10%", marginRight:'0%', cursor:'pointer'}}>
                     
-                      <h3 className="cairo" style={{background:'rgba(250, 250, 250, .15)',WebkitTextStroke: '.3  px black' , color:'darkcyan',textShadow: '1px 1px 10px rgb(210 211 269/ 90%)',borderRadius:'25px',fontSize:"18px", height:'55vh',width:'20vw',textAlign:'center',lineHeight:2, paddingBottom:'7vh', paddingTop:'.0vh', marginTop:'4vh'}}><img src={product.image} alt='' style={{width:'18vw', height:'36vh',objectFit:'contain', marginBottom:'0vh'}}></img>{product.name} <br></br></h3>
+                      <h3 className="cairo" style={{background:'rgba(250, 250, 250, .15)',WebkitTextStroke: '.3  px black' , color:'darkcyan',textShadow: '1px 1px 10px rgb(210 211 269/ 90%)',borderRadius:'25px',fontSize:"18px", height:'55vh',width:'20vw',textAlign:'center',lineHeight:2, paddingBottom:'7vh', paddingTop:'.0vh', marginTop:'4vh'}}><Image width={257} height={260} quality={55} src={product.image} alt='' style={{objectFit:'contain', marginBottom:'0vh'}}></Image>{product.name} <br></br></h3>
                       </button></Link>
           )})
   return (
