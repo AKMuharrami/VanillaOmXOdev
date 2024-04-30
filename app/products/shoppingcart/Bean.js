@@ -56,7 +56,7 @@ export default function Home() {
 }
 useEffect(() => {   
     localStorage.getItem("Cart", JSON.stringify(t))
-  }, [t])
+  }, [tt])
   const n = t.length
   console.log(t[1])
   console.log(n)
@@ -351,7 +351,7 @@ useEffect(() => {
             <a
             // href="/articles/1"
             className={styles.card2}
-            style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+            style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
             
             >
          <div style={{display:"flex"}} >
@@ -376,7 +376,7 @@ useEffect(() => {
                 <a
                 
                 className={styles.card2}
-                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                 
                 >
              <div style={{display:"flex"}} >
@@ -401,7 +401,7 @@ useEffect(() => {
                 <a
             
                 className={styles.card2}
-                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                 
                 >
              <div style={{display:"flex"}} >
@@ -426,7 +426,7 @@ useEffect(() => {
                     <a
                 
                     className={styles.card2}
-                    style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                    style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                     
                     >
                  <div style={{display:"flex"}} >
@@ -451,7 +451,7 @@ useEffect(() => {
                         <a
                         
                         className={styles.card2}
-                        style={{display:'ruby-text', marginLeft:'', maxWidth:'100vw'}}
+                        style={{display:'ruby-text', marginLeft:'', maxWidth:'100%'}}
                         
                         >
                      <div style={{display:"flex"}} >
@@ -476,7 +476,7 @@ useEffect(() => {
                             <a
                             
                             className={styles.card2}
-                            style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                            style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                             
                             >
                          <div style={{display:"flex"}} >
@@ -501,7 +501,7 @@ useEffect(() => {
                                 <a
                                 
                                 className={styles.card2}
-                                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                 
                                 >
                              <div style={{display:"flex"}} >
@@ -526,7 +526,7 @@ useEffect(() => {
                                     <a
                                     
                                     className={styles.card2}
-                                    style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                                    style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                     
                                     >
                                  <div style={{display:"flex"}} >
@@ -551,7 +551,7 @@ useEffect(() => {
                                         <a
                                         
                                         className={styles.card2}
-                                       style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                                       style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                         
                                         >
                                      <div style={{display:"flex"}} >
@@ -576,7 +576,7 @@ useEffect(() => {
                                             <a
                                             
                                             className={styles.card2}
-                                            style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                                            style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                             
                                             >
                                          <div style={{display:"flex"}} >
@@ -601,7 +601,7 @@ useEffect(() => {
                                                 <a
                                             
                                                 className={styles.card2}
-                                                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100vw'}}
+                                                style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                                 
                                                 >
                                              <div style={{display:"flex"}} >
