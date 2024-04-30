@@ -56,7 +56,7 @@ export default function Home() {
 }
 useEffect(() => {   
     localStorage.getItem("Cart", JSON.stringify(t))
-  }, [tt])
+  }, [d])
   const n = t.length
   console.log(t[1])
   console.log(n)
@@ -372,10 +372,10 @@ useEffect(() => {
     ) }
     else if (check.id == 1 && check.Q == 5) {
         return(
-            <div>
+            <div className={styles.card2}>
                 <a
                 
-                className={styles.card2}
+                
                 style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                 
                 >
@@ -397,10 +397,10 @@ useEffect(() => {
         )}
     else if (check.id == 1 && check.Q == 6) {
         return(
-            <div>
+            <div className={styles.card2}>
                 <a
             
-                className={styles.card2}
+                
                 style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                 
                 >
@@ -422,10 +422,10 @@ useEffect(() => {
         )}
         else if (check.id == 1 && check.Q == 12) {
             return(
-                <div>
+                <div className={styles.card2}>
                     <a
                 
-                    className={styles.card2}
+                    
                     style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                     
                     >
@@ -447,10 +447,10 @@ useEffect(() => {
             )}
             else if (check.id == 1 && check.Q == 23) {
                 return(
-                    <div>
+                    <div className={styles.card2}>
                         <a
                         
-                        className={styles.card2}
+                        
                         style={{display:'ruby-text', marginLeft:'', maxWidth:'100%'}}
                         
                         >
@@ -472,10 +472,10 @@ useEffect(() => {
                 )}
                 else if (check.id == 2 && check.Q == 6) {
                     return(
-                        <div>
+                        <div className={styles.card2}>
                             <a
                             
-                            className={styles.card2}
+                            
                             style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                             
                             >
@@ -497,10 +497,10 @@ useEffect(() => {
                     )}
                     else if (check.id == 2 && check.Q == 11.800) {
                         return(
-                            <div>
+                            <div className={styles.card2}>
                                 <a
                                 
-                                className={styles.card2}
+                                
                                 style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                 
                                 >
@@ -522,10 +522,10 @@ useEffect(() => {
                         )}
                         else if (check.id == 2 && check.Q == 23.400) {
                             return(
-                                <div>
+                                <div className={styles.card2}>
                                     <a
                                     
-                                    className={styles.card2}
+                                    
                                     style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                     
                                     >
@@ -547,10 +547,10 @@ useEffect(() => {
                             )}
                             else if (check.id == 3 && check.Q == 5) {
                                 return(
-                                    <div>
+                                    <div className={styles.card2}>
                                         <a
                                         
-                                        className={styles.card2}
+                                        
                                        style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                         
                                         >
@@ -572,10 +572,10 @@ useEffect(() => {
                                 )}
                                 else if (check.id == 3 && check.Q == 10) {
                                     return(
-                                        <div>
+                                        <div className={styles.card2}>
                                             <a
                                             
-                                            className={styles.card2}
+                                            
                                             style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                             
                                             >
@@ -597,10 +597,10 @@ useEffect(() => {
                                     )}
                                     else if (check.id == 3 && check.Q == 19.700) {
                                         return(
-                                            <div>
+                                            <div className={styles.card2}>
                                                 <a
                                             
-                                                className={styles.card2}
+                                                
                                                 style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
                                                 
                                                 >
