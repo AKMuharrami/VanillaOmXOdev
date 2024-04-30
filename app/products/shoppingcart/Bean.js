@@ -347,11 +347,11 @@ useEffect(() => {
   let mchecklist =  t.map((check) => {
     if (check.id == 1 && check.Q == 2.5) {
     return(
-        <div>
+        <div className={styles.card2}>
             <a
             // href="/articles/1"
-            className={styles.card2}
-            style={{display:'ruby-text', marginLeft:'0%',width:'75vw', maxWidth:'100%'}}
+            
+            style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
             
             >
          <div style={{display:"flex"}} >
