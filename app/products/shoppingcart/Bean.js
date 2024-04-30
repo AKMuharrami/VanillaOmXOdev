@@ -50,13 +50,13 @@ export default function Home() {
     console.log(p)
     localStorage.removeItem("Cart");
     localStorage.setItem("Cart",JSON.stringify(p))
-    Settt(t)
+    Settt(p)
     
 
 }
 useEffect(() => {   
     localStorage.getItem("Cart", JSON.stringify(t))
-  }, [d])
+  }, [tt])
   const n = t.length
   console.log(t[1])
   console.log(n)

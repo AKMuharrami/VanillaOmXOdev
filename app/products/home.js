@@ -239,7 +239,7 @@ export default function A1() {
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
       <div className={styles.description2} style={{position:'fixed', padding:'3%', marginTop:'-10%',height:'10%'}}>
       <MenuIntroduction1/>
-            <Tooltip className={styles.center3} sx={{background:'black', marginRight:'37%', maxHeight:'5vh', maxWidth:'11vw'}}  title="Visit Shopping cart">
+            <Tooltip className={styles.center3} sx={{background:'black', marginRight:'37%', maxHeight:'5vh', maxWidth:'10vw'}}  title="Visit Shopping cart">
       <IconButton  href='/products/shoppingcart'>
         <ShoppingCart  sx={{color: 'bisque'}}  />
       </IconButton>

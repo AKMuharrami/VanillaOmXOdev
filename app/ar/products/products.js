@@ -48,8 +48,8 @@ let mproducts= [
             let mproducts3= [
               {
                 id:3,
-                image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png",
-                name:" أعواد فانيلا بوربن - زنجبار - درجة أ",
+                image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714469528288-C28BFFC0-6FA5-4B00-AF84-B696EA2711AF.png",
+                name:" أعواد فانيلا تاهيتين - بابوا نيو جيني - درجة أ",
                 price:"5-7 Omr",
                 animationn:'/products/model/Acar1',
                 staticc:'/products/model/car1',
@@ -86,8 +86,8 @@ let mproducts= [
 },
 {
   id:3,
-  image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png",
-  name:" أعواد فانيلا بوربن - زنجبار - درجة أ",
+  image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714469528288-C28BFFC0-6FA5-4B00-AF84-B696EA2711AF.png",
+  name:" أعواد فانيلا تاهيتين - بابوا نيو جيني - درجة أ",
   price:"5-7 Omr",
   animationn:'/products/model/Acar1',
   staticc:'/products/model/car1',
@@ -130,7 +130,7 @@ export default function A1() {
                           let mproductslist3 = mproducts3.map((product) => { 
                             return(
                             <Link key={product.id} style={{zIndex:2}} href={`/ar/products/${product.no}`}>
-                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><Image width={225} height={200} quality={55} src={product.image} alt='' style={{height:'33vh',objectFit:'contain', marginBottom:'-12%',zIndex:0, marginTop:'3%'}}></Image><br></br>{product.name} <br></br></h3>
+                              <button style={{background:'rgb(255, 255, 255, 0)', border:'0', width:'65vw', height:'43vh', marginTop:-50, marginBottom:'-10%', marginRight:'0%', cursor:'pointer'}}><h3 className="cairo" style={{background:'rgba(0, 0, 20, 0.4)',WebkitTextStroke: '.3  px black' , color:'rgba(0,255,255,.7)',borderRadius:'25px',fontSize:"18px", height:'40vh',width:'65vw',textAlign:'center',lineHeight:2, paddingBottom:'1vh', paddingTop:'.0vh', zIndex:'1'}}><Image width={310} height={200} quality={55} src={product.image} alt='' style={{height:'33vh',objectFit:'contain', marginBottom:'-12%',zIndex:0, marginTop:'3%'}}></Image><br></br>{product.name} <br></br></h3>
                               </button></Link>
                                   )})
   let productslist = products.map((product) => { 
@@ -244,7 +244,7 @@ export default function A1() {
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
       <div className={styles.description2} style={{position:'fixed', padding:'3%', direction:'rtl', marginTop:'-10%', height:'10%', zIndex:2}}>
       <MenuIntroduction1/>
-      <Tooltip className={styles.center3} sx={{background:'black', marginLeft:'43%', maxHeight:'5vh', maxWidth:'11vw'}}  title="تصفح سلة المشتريات">
+      <Tooltip className={styles.center3} sx={{background:'black', marginLeft:'43%', maxHeight:'5vh', maxWidth:'10vw'}}  title="تصفح سلة المشتريات">
       <IconButton  href='/products/shoppingcart'>
         <ShoppingCart  sx={{color: 'bisque'}}  />
       </IconButton>
