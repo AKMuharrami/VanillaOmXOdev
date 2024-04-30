@@ -255,7 +255,7 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'18vw'}} value="اطلب" type='submit'></input>
                         </div>
                     </form>
-                    <button style={{marginLeft:'28%', marginTop:'2%', direction:'rtl'}} type='submit' onClick={() => {
+                    <button style={{marginLeft:'25%', marginTop:'2%', direction:'rtl'}} type='submit' onClick={() => {
                       
                       const Paste = {
                         id:2,
