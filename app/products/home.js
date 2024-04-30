@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '@/app/page.module.css'
 import  Icon  from '@mdi/react';
 import {mdiFlower} from '@mdi/js';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import { ShoppingCart } from '@mui/icons-material';
 import MenuIntroduction1 from '@/app/menu1m';
 import MenuIntroduction from '@/app/menu1';
 import Link from 'next/link';
@@ -140,14 +143,20 @@ export default function A1() {
         
         
         <MenuIntroduction/>
+        
         {/* <h1 className={styles.card1}>Title</h1> */}
         <div className={styles.card1} style={{marginTop:'-1%'}}>
+          
           <a
             href="/"
             // target="_blank"
             rel="noopener noreferrer"
           >
-            
+            <Tooltip title="Visit Shopping Cart">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
             <Icon path={mdiFlower} style={{marginRight:'0%'}}size={.9} />
             VanillaOm
           </a>
@@ -230,6 +239,11 @@ export default function A1() {
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
       <div className={styles.description2} style={{position:'fixed', padding:'3%', marginTop:'-10%',height:'10%'}}>
       <MenuIntroduction1/>
+            <Tooltip className={styles.center3} sx={{background:'black', marginRight:'37%', maxHeight:'5vh', maxWidth:'11vw'}}  title="Visit Shopping cart">
+      <IconButton  href='/products/shoppingcart'>
+        <ShoppingCart  sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
         <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
           <a
             href="/"

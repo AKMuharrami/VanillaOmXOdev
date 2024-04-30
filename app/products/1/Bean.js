@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Modal, Box, Typography } from "@mui/material";
 import styles from '@/app/page.module.css';
 import  Icon  from '@mdi/react';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 import {mdiFlower } from '@mdi/js';
 import MenuIntroduction from '@/app/menu';
 import { useMediaQuery } from "react-responsive";
@@ -10,13 +12,20 @@ import { useMediaQuery } from "react-responsive";
 import { useForm, ValidationError } from '@formspree/react';
 import {motion} from 'framer-motion'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { ShoppingCart } from '@mui/icons-material';
 export default function Home() {
   const handleredirect = () => {
     setTimeout(()=> {
         window.location.href = "/"
         
     })
+};
+const handleredirect1 = () => {
+  setTimeout(()=> {
+      window.location.href = "/products/shoppingcart"
+      
+  })
 };
 const style = {
   position: 'absolute',
@@ -35,6 +44,11 @@ const isDesktopOrLaptop = useMediaQuery({
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const [Quantity, SetQuantity] = useState("6")
 const [state, handleSubmit] = useForm("mvojvawp");
+const lsv = JSON.parse(localStorage.getItem('Cart') || "[]")
+const [cart,setcart] = useState(lsv)
+useEffect(() => {
+  localStorage.setItem("Cart", JSON.stringify(cart))
+}, [cart])
 if (state.succeeded) {
     handleredirect();
     return <Modal
@@ -43,10 +57,10 @@ if (state.succeeded) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" sx={{color:'blue'}} component="h2">
             Thank you
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2, color:'black' }}>
             Your order has been successful
           </Typography>
         </Box>
@@ -77,7 +91,7 @@ if (state.succeeded) {
                         <h1 style={{color:'white', textAlign:'center', marginTop:'-7%', marginBottom:'6%', marginRight:'57%'}}>Alcohol free Vanilla Paste</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>Issue Order</h2>
                         <br></br>
-                        <form onSubmit={handleSubmit} >
+                        <form onSubmit={handleSubmit}>
                             <div style={{display:'flex', justifyContent:'center'}}>
                                 <input id='Prod' type="hidden" name="Prod" value="Paste" style={{marginRight:'3vw', height:'2.5vh'}}></input>
                                 <label for="Name" style={{color:'white', fontSize:'125%'}}>Name </label>
@@ -132,6 +146,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'8vw'}} type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginLeft:'44.9%', marginTop:'2%'}} type='submit' onClick={() => {
+                      
+                      const Paste = {
+                        id:2,
+                        Bname:"Premium Vanilla Bean Paste",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745450-829A019A-E480-47A5-97D4-7BE2107A88DB.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Paste)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Paste)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>Add to cart<span style={{color:'black'}}> ({cart.length})</span></button>
+                        <Tooltip title="Visit Shopping Cart">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
               </div>
               <h4 style={{color:'white',marginLeft:'6.5vw', marginTop:'1%'}}>*You will be contacted within 6 hours to confirm the order In Sha Allah, and payment will be received on deleivery.</h4>
@@ -220,6 +261,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'18vw'}} type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginLeft:'36%', marginTop:'2%'}} type='submit' onClick={() => {
+                      
+                      const Paste = {
+                        id:2,
+                        Bname:"Premium Vanilla Bean Paste",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745450-829A019A-E480-47A5-97D4-7BE2107A88DB.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Paste)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Paste)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>Add to cart<span style={{color:'black'}}> ({cart.length})</span></button>
+                        <Tooltip title="Visit Shopping Cart">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
                 </div>
                 <div style={{background:'rgba(10, 54, 119, 0.1)', paddingTop:'2%', paddingBottom:'13%'}}>

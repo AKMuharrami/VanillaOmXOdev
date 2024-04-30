@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { Modal, Box, Typography } from "@mui/material";
 import styles from '@/app/page.module.css';
 import  Icon  from '@mdi/react';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import { ShoppingCart } from '@mui/icons-material';
 import {mdiFlower } from '@mdi/js';
 import MenuIntroduction from '@/app/menuar';
 import { useMediaQuery } from "react-responsive";
@@ -10,7 +13,7 @@ import { useMediaQuery } from "react-responsive";
 import { useForm, ValidationError } from '@formspree/react';
 import {motion} from 'framer-motion'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 export default function Home() {
   const handleredirect = () => {
     setTimeout(()=> {
@@ -35,6 +38,11 @@ const isDesktopOrLaptop = useMediaQuery({
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const [Quantity, SetQuantity] = useState("5")
 const [state, handleSubmit] = useForm("mvojvawp");
+const lsv = JSON.parse(localStorage.getItem('Cart') || "[]")
+const [cart,setcart] = useState(lsv)
+useEffect(() => {
+  localStorage.setItem("Cart", JSON.stringify(cart))
+}, [cart]);
 if (state.succeeded) {
     handleredirect();
     return <Modal
@@ -129,6 +137,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'8vw'}} value="اطلب" type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginRight:'41.5%', marginTop:'2%'}} type='submit' onClick={() => {
+                      
+                      const Extract = {
+                        id:3,
+                        Bname:"Alcohol free Vanilla Extract",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745450-829A019A-E480-47A5-97D4-7BE2107A88DB.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Extract)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Extract)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>أضف إلى سلّة المشتريات<span style={{color:'black'}}> ({cart.length})</span></button>
+                    <Tooltip title="تصفح سلة المشتريات">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
               </div>
               <h4 style={{color:'white',marginRight:'12vh', marginTop:'1%', marginBottom:'1%',direction:'rtl'}}>*سيتم التواصل معكم لتأكيد وإكمال عملية الشراء خلال 6 ساعات إن شاء الله تعالى، والدفع سيكون عند الاستلام. </h4>
@@ -214,6 +249,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'18vw'}} value="اطلب" type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginLeft:'28%', marginTop:'2%'}} type='submit' onClick={() => {
+                      
+                      const Extract = {
+                        id:3,
+                        Bname:"Alcohol free Vanilla Extract",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1713785745450-829A019A-E480-47A5-97D4-7BE2107A88DB.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Extract)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Extract)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>أضف إلى سلّة المشتريات<span style={{color:'black'}}> ({cart.length})</span></button>
+                    <Tooltip title="تصفح سلة المشتريات">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
                 </div>
                 <div style={{background:'rgba(10, 54, 119, 0.1 )', paddingTop:'2%', paddingBottom:'20%'}}>

@@ -2,6 +2,9 @@
 import Image from 'next/image'
 import styles from '@/app/page.module.css'
 import  Icon  from '@mdi/react';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import { ShoppingCart } from '@mui/icons-material';
 import {mdiFlower} from '@mdi/js';
 import MenuIntroduction from '@/app/menu1ar';
 import MenuIntroduction1 from '@/app/menu1arm';
@@ -23,7 +26,7 @@ let mproducts= [
     let mproducts1= [
       {
         id:1,
-        image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708965707995-78866F03-BC70-47E0-B081-D46FB3B685F9.png",
+        image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png",
         name:"معجون الفانيلا - الخالي من الكحول",
         price:"5-7 Omr",
         animationn:'/products/model/Acar1',
@@ -65,7 +68,7 @@ let mproducts= [
     },
     {
       id:1,
-      image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708965707995-78866F03-BC70-47E0-B081-D46FB3B685F9.png",
+      image:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png",
       name:"معجون الفانيلا - الخالي من الكحول",
       price:"5-7 Omr",
       animationn:'/products/model/Acar1',
@@ -153,7 +156,11 @@ export default function A1() {
             // target="_blank"
             rel="noopener noreferrer"
           >
-            
+                        <Tooltip title="تصفح سلة المشتريات">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
             <Icon path={mdiFlower} style={{marginRight:'0%'}}size={.9} />
             فانيلا عمان
           </a>
@@ -237,7 +244,13 @@ export default function A1() {
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
       <div className={styles.description2} style={{position:'fixed', padding:'3%', direction:'rtl', marginTop:'-10%', height:'10%', zIndex:2}}>
       <MenuIntroduction1/>
+      <Tooltip className={styles.center3} sx={{background:'black', marginLeft:'43%', maxHeight:'5vh', maxWidth:'11vw'}}  title="تصفح سلة المشتريات">
+      <IconButton  href='/products/shoppingcart'>
+        <ShoppingCart  sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
         <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
+          
           <a
             href="/ar"
             // target="_blank"

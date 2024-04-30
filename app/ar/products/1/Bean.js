@@ -4,13 +4,16 @@ import { Modal, Box, Typography } from "@mui/material";
 import styles from '@/app/page.module.css';
 import  Icon  from '@mdi/react';
 import {mdiFlower } from '@mdi/js';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import { ShoppingCart } from '@mui/icons-material';
 import MenuIntroduction from '@/app/menuar';
 import { useMediaQuery } from "react-responsive";
 // import ResponsiveAppBar from '@/app/menubar';
 import { useForm, ValidationError } from '@formspree/react';
 import {motion} from 'framer-motion'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 export default function Home() {
   const handleredirect = () => {
     setTimeout(()=> {
@@ -35,6 +38,11 @@ const isDesktopOrLaptop = useMediaQuery({
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const [Quantity, SetQuantity] = useState("6")
 const [state, handleSubmit] = useForm("mvojvawp");
+const lsv = JSON.parse(localStorage.getItem('Cart') || "[]")
+const [cart,setcart] = useState(lsv)
+useEffect(() => {
+  localStorage.setItem("Cart", JSON.stringify(cart))
+}, [cart])
 if (state.succeeded) {
     handleredirect();
     return <Modal
@@ -72,7 +80,7 @@ if (state.succeeded) {
       </div>
       {isDesktopOrLaptop &&<div>
         <div style={{marginTop:'5vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'5vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)', direction:'rtl'}}>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708965707995-78866F03-BC70-47E0-B081-D46FB3B685F9.png" style={{height:'40vh', marginRight:'2vw', marginTop:'1%', marginLeft:'3%'}}></img>
+                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png" style={{height:'40vh', marginRight:'2vw', marginTop:'1%', marginLeft:'3%'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h1 style={{color:'white', textAlign:'center', marginTop:'-8%', marginBottom:'7%', marginLeft:'39%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>معجون فانيلا - عالي الجودة</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>اطلب المنتج</h2>
@@ -132,6 +140,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'8vw'}} value="اطلب" type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginRight:'41.5%', marginTop:'2%', direction:'rtl'}} type='submit' onClick={() => {
+                      
+                      const Paste = {
+                        id:2,
+                        Bname:"Premium Vanilla Bean Paste",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Paste)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Paste)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>أضف إلى سلة المشتريات<span style={{color:'black'}}> ({cart.length})</span></button>
+                        <Tooltip title="تصفح سلة المشتريات">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
               </div>
               <h4 style={{color:'white',marginRight:'12vh', marginTop:'1%', marginBottom:'1%',direction:'rtl'}}>*سيتم التواصل معكم لتأكيد وإكمال عملية الشراء خلال 6 ساعات إن شاء الله تعالى، والدفع سيكون عند الاستلام. </h4>
@@ -159,7 +194,7 @@ if (state.succeeded) {
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-89vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'1.75vh', borderRadius:'1%'}}>
               <h2 style={{color:'white', textAlign:'center', marginTop:'-2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>معجون فانيلا<br></br>عالي الجودة</h2>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708965707995-78866F03-BC70-47E0-B081-D46FB3B685F9.png" style={{height:'25vh', marginLeft:'11vw'}}></img>
+                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png" style={{height:'25vh', marginLeft:'11vw'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h2 style={{color:'white', textAlign:'center', fontSize:'120%', marginTop:'3%'}}>اطلب المنتج</h2>
                         <br></br>
@@ -220,6 +255,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'18vw'}} value="اطلب" type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginLeft:'28%', marginTop:'2%', direction:'rtl'}} type='submit' onClick={() => {
+                      
+                      const Paste = {
+                        id:2,
+                        Bname:"Premium Vanilla Bean Paste",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Paste)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Paste)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>أضف إلى سلة المشتريات<span style={{color:'black'}}> ({cart.length})</span></button>
+                        <Tooltip title="تصفح سلة المشتريات">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
                 </div>
                 <div style={{background:'rgba(10, 54, 119, 0.1 )', paddingTop:'2%', paddingBottom:'20%'}}>

@@ -4,13 +4,16 @@ import { Modal, Box, Typography } from "@mui/material";
 import styles from '@/app/page.module.css';
 import  Icon  from '@mdi/react';
 import {mdiFlower } from '@mdi/js';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import { ShoppingCart } from '@mui/icons-material';
 import MenuIntroduction from '@/app/menu';
 import { useMediaQuery } from "react-responsive";
 // import ResponsiveAppBar from '@/app/menubar';
 import { useForm, ValidationError } from '@formspree/react';
 import {motion} from 'framer-motion'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 export default function Home() {
   const handleredirect = () => {
     setTimeout(()=> {
@@ -35,6 +38,11 @@ const isDesktopOrLaptop = useMediaQuery({
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const [Quantity, SetQuantity] = useState("2.5")
 const [state, handleSubmit] = useForm("mvojvawp");
+const lsv = JSON.parse(localStorage.getItem('Cart') || "[]")
+const [cart,setcart] = useState(lsv)
+useEffect(() => {
+  localStorage.setItem("Cart", JSON.stringify(cart))
+}, [cart])
 if (state.succeeded) {
     handleredirect();
     return <Modal
@@ -43,10 +51,10 @@ if (state.succeeded) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography id="modal-modal-title" variant="h6" sx={{color:'blue'}} component="h2">
             Thank you
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2, color:'black' }}>
             Your order has been successful
           </Typography>
         </Box>
@@ -134,6 +142,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'8vw'}} type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginLeft:'44.9%', marginTop:'2%'}} type='submit' onClick={() => {
+                      
+                      const Bean = {
+                        id:1,
+                        Bname:"PNG Planifolia (Bourbon) Vanilla Beans",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Bean)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Bean)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>Add to cart<span style={{color:'black'}}> ({cart.length})</span></button>
+                    <Tooltip title="Visit Shopping Cart">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
               </div>
               <h4 style={{color:'white',marginLeft:'6.5vw', marginTop:'1%'}}>*You will be contacted within 6 hours to confirm the order In Sha Allah, and payment will be received on deleivery.</h4>
@@ -224,6 +259,33 @@ if (state.succeeded) {
                             <input style={{height:'4vh', width:'18vw'}} type='submit'></input>
                         </div>
                     </form>
+                    <button style={{marginLeft:'36%', marginTop:'2%'}} type='submit' onClick={() => {
+                      
+                      const Bean = {
+                        id:1,
+                        Bname:"PNG Planifolia (Bourbon) Vanilla Beans",
+                        Q:Quantity,
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png"
+                      }
+
+                      if (lsv == "undefined") {
+                        setcart(Bean)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      else {
+                        let newcart = [...cart]
+                        newcart.push(Bean)
+                        setcart(newcart)
+                        window.localStorage.setItem("Cart", JSON.stringify(cart))
+                      }
+                      
+                      
+                    }}>Add to cart<span style={{color:'black'}}> ({cart.length})</span></button>
+                    <Tooltip title="Visit Shopping Cart">
+      <IconButton href='/products/shoppingcart'>
+        <ShoppingCart sx={{color: 'bisque'}}  />
+      </IconButton>
+    </Tooltip>
                 </div>
                 </div>
                 <div style={{background:'rgba(10, 54, 119, 0.1)', paddingTop:'2%', paddingBottom:'13%'}}>

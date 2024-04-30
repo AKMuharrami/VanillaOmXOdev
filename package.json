@@ -17,6 +17,7 @@
     "@mui/icons-material": "^5.15.3",
     "@mui/material": "^5.15.3",
     "@mui/system": "^5.15.3",
+    "@vercel/postgres": "^0.8.0",
     "framer-motion": "^10.17.9",
     "leaflet": "^1.9.4",
     "mailtoui": "^1.0.3",
