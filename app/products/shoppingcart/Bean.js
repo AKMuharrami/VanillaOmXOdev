@@ -43,8 +43,9 @@ export default function Home() {
   const [state, handleSubmit] = useForm("mvojvawp");
   const t = JSON.parse(localStorage.getItem("Cart") || ['']);
   const [tt, Settt] = useState(t)
+  let p = ""
   const d = () => {
-    let p = t
+    p = t
     p.pop()
     console.log(t)
     console.log(p)
@@ -54,9 +55,9 @@ export default function Home() {
     
 
 }
-useEffect(() => {   
-    localStorage.getItem("Cart", JSON.stringify(t))
-  }, [tt])
+// useEffect(() => {   
+//     localStorage.getItem("Cart", JSON.stringify(t))
+//   }, [Settt(p)])
   const n = t.length
   console.log(t[1])
   console.log(n)
