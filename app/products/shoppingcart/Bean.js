@@ -356,7 +356,7 @@ useEffect(() => {
             >
          <div style={{display:"flex"}} >
             <img src={check.Img} alt='' style={{width:'10%', objectFit:"cover",maxWidth:"10%", maxHeight:"15%"}} ></img>
-            <div style={{maxWidth:"100%", marginLeft:"1%", paddingTop:"1%"}}>
+            <div style={{maxWidth:"100%", marginBottom:"3%", paddingTop:"1%"}}>
             
              <h4 style={{textAlign:'center'}}>
                2 {check.Bname}
