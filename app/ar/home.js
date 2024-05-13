@@ -33,7 +33,7 @@ const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const [Quantity, SetQuantity] = useState("2.25")
+  const [Quantity, SetQuantity] = useState("2.5")
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
     handleredirect();
@@ -248,11 +248,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="2.25">عودان</option>
-                              <option value="4.5">4 أعواد</option>
-                              <option value="5.4">5 أعواد</option>
-                              <option value="10.8">10 أعواد</option>
-                              <option value='20.7'>20 عود</option>
+                              <option  value="2.5">عودان</option>
+                              <option value="5">4 أعواد</option>
+                              <option value="6">5 أعواد</option>
+                              <option value="12">10 أعواد</option>
+                              <option value='23'>20 عود</option>
                             </select>
                             </div>
                             <br></br>
@@ -313,11 +313,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                                  <option  value="2.25">عودان</option>
-                              <option value="4.5">4 أعواد</option>
-                              <option value="5.4">5 أعواد</option>
-                              <option value="10.8">10 أعواد</option>
-                              <option value='20.7'>20 عود</option>
+                                  <option  value="2.5">عودان</option>
+                              <option value="5">4 أعواد</option>
+                              <option value="6">5 أعواد</option>
+                              <option value="12">10 أعواد</option>
+                              <option value='23'>20 عود</option>
                               {/* <option  value="2.5">عودان</option>
                               <option value="5">4 أعواد</option>
                               <option value="6">5 أعواد</option>

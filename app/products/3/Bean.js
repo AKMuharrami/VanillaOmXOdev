@@ -33,7 +33,8 @@ const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const [Quantity, SetQuantity] = useState("1.5")
+  const [Quantity, SetQuantity] = useState("1.5");
+  const [Quantityy, SetQuantityy] = useState("1")
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
     handleredirect();
@@ -126,8 +127,20 @@ if (state.succeeded) {
                             </div>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
+                            <label For="Del"></label>
+                <select onChange={(e) => {
+                                e.preventDefault
+                                SetQuantityy(event.target.value)}} type="select" id='Del'>
+                <option value="1">Deliever in Muscat</option>
+                <option value="1.5">Deliever out of Muscat to Delievery Branch</option>
+                <option value="2">Deliever out of Muscat directly to House</option>
+                </select>
+                            </div>
+                            <input hidden id="Tot" name="totall" value={parseFloat(Quantity) + parseFloat(Quantityy)}></input>
+                            <br></br>
+                            <div style={{display:'flex', justifyContent:'center'}}>
                             <label For="Price" style={{color:'white', fontSize:'125%', marginTop:'.35%'}}>Price: </label>
-                              <h2 style={{marginRight:'3vw', marginLeft:'1vw'}} id='Price'>{Quantity} Omr</h2>
+                              <h2 style={{marginRight:'3vw', marginLeft:'1vw'}} id='Price'>{parseFloat(Quantity) + parseFloat(Quantityy)} Omr</h2>
                             </div>
                             <br></br>
                             <div style={{textAlign:'center'}}>
@@ -216,8 +229,20 @@ if (state.succeeded) {
                             </div>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
+                            <label For="Del"></label>
+                <select onChange={(e) => {
+                                e.preventDefault
+                                SetQuantityy(event.target.value)}} type="select" id='Del'>
+                <option value="1">Deliever in Muscat</option>
+                <option value="1.5">Deliever out of Muscat to Delievery Branch</option>
+                <option value="2">Deliever out of Muscat directly to House</option>
+                </select>
+                            </div>
+                            <input hidden id="Tot" name="totall" value={parseFloat(Quantity) + parseFloat(Quantityy)}></input>
+                            <br></br>
+                            <div style={{display:'flex', justifyContent:'center'}}>
                             <label For="Price" style={{color:'white', fontSize:'100%', marginTop:'.35%'}}>Price: </label>
-                              <h3 style={{marginRight:'3vw', marginLeft:'1vw'}} id='Price'>{Quantity} Omr</h3>
+                              <h3 style={{marginRight:'3vw', marginLeft:'1vw'}} id='Price'>{parseFloat(Quantity) + parseFloat(Quantityy)} Omr</h3>
                             </div>
                             <br></br>
                             <div style={{textAlign:'center'}}>
