@@ -33,7 +33,7 @@ const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const [Quantity, SetQuantity] = useState("1.5");
+  const [Quantity, SetQuantity] = useState("2.5");
   const [Quantityy, SetQuantityy] = useState("1");
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
@@ -73,9 +73,9 @@ if (state.succeeded) {
       </div>
       {isDesktopOrLaptop &&<div>
         <div style={{marginTop:'5vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'5vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)', direction:'rtl'}}>
-        <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png" style={{height:'55vh', marginLeft:'3vw', marginTop:'0%', marginRight:'5%',objectFit:"cover"}}></img>
+        <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714469528288-C28BFFC0-6FA5-4B00-AF84-B696EA2711AF.png" style={{height:'25vh', marginLeft:'0vw', marginTop:'7%', marginRight:'0%',objectFit:"cover"}}></img>
                     <div style={{marginLeft:'5vw'}}>
-                        <h1 style={{color:'white', textAlign:'center', marginTop:'-8%', marginBottom:'6%', marginLeft:'39%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا (بوربن) - درجة أ <br></br>زنجبار</h1>
+                        <h1 style={{color:'white', textAlign:'center', marginTop:'-8%', marginBottom:'6%', marginLeft:'39%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا (تاهيتين) - درجة أ <br></br>بابوا نيو جيني</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>اطلب المنتج</h2>
                         <br></br>
                         <form onSubmit={handleSubmit} >
@@ -113,11 +113,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginLeft:'3vw', marginRight:'1vw'}}>
-                              <option  value="1.5">عودان</option>
-                              <option value="3">4 أعواد</option>
-                              <option value="3.750">5 أعواد</option>
-                              <option value="7.5">10 أعواد</option>
-                              <option value='14'>20 عود</option>
+                              <option  value="2.5">عودان</option>
+                              <option value="5">4 أعواد</option>
+                              <option value="6">5 أعواد</option>
+                              <option value="12">10 أعواد</option>
+                              <option value='23'>20 عود</option>
                               {/* <option  value="1.35">عودان</option>
                               <option value="2.7">4 أعواد</option>
                               <option value="3.375">5 أعواد</option>
@@ -173,8 +173,8 @@ if (state.succeeded) {
       </div>
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-89vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'1.75vh', borderRadius:'1%'}}>
-              <h2 style={{color:'white', textAlign:'center', marginTop:'-2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا <br></br>(بوربن)  -زنجبار-  درجة أ -</h2>
-              <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png" style={{height:'40vh', marginLeft:'15vw', marginTop:'-27%', marginBottom:'-19%',objectFit:'cover',rotate:'80deg'}}></img>
+              <h2 style={{color:'white', textAlign:'center', marginTop:'-2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا <br></br>(تاهيتين)  -بابوا نيو جيني-  درجة أ -</h2>
+              <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714469528288-C28BFFC0-6FA5-4B00-AF84-B696EA2711AF.png" style={{height:'17vh', marginLeft:'0vw', marginTop:'0%', marginBottom:'0%',objectFit:'cover'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h2 style={{color:'white', textAlign:'center', fontSize:'120%', marginTop:'3%'}}>اطلب المنتج</h2>
                         <br></br>
@@ -220,11 +220,11 @@ if (state.succeeded) {
                               <option value="3.375">5 أعواد</option>
                               <option value="6.75">10 أعواد</option>
                               <option value='12.6'>20 عود</option> */}
-                              <option  value="1.5">عودان</option>
-                              <option value="3">4 أعواد</option>
-                              <option value="3.750">5 أعواد</option>
-                              <option value="7.5">10 أعواد</option>
-                              <option value='14'>20 عود</option>
+                              <option  value="2.5">عودان</option>
+                              <option value="5">4 أعواد</option>
+                              <option value="6">5 أعواد</option>
+                              <option value="12">10 أعواد</option>
+                              <option value='23'>20 عود</option>
                             </select>
                             </div>
                             <br></br>

@@ -33,7 +33,7 @@ const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const [Quantity, SetQuantity] = useState("1.5");
+  const [Quantity, SetQuantity] = useState("2.5");
   const [Quantityy, SetQuantityy] = useState("1")
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
@@ -73,7 +73,7 @@ if (state.succeeded) {
       </div>
       {isDesktopOrLaptop &&<div>
                     <div style={{marginTop:'-2vh', display:'flex', justifyContent:'space-around', padding:'5vh',paddingTop:'13vh',paddingBottom:'7vh', borderRadius:'1%', background:'rgba(205, 195, 177,.1)'}}>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png" style={{height:'55vh', marginLeft:'0vw', marginTop:'5%', marginRight:'0%',objectFit:"cover"}}></img>
+                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714469528288-C28BFFC0-6FA5-4B00-AF84-B696EA2711AF.png" style={{height:'25vh', marginLeft:'0vw', marginTop:'7%', marginRight:'0%',objectFit:"cover", direction:'rtl'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h1 style={{color:'white', textAlign:'center', marginTop:'-7%', marginBottom:'5%', marginRight:'57%'}}>Bourbon (Planifolia) Vanilla beans - Zanzibar</h1>
                         <h2 style={{color:'white', textAlign:'center'}}>Issue Order</h2>
@@ -118,11 +118,11 @@ if (state.succeeded) {
                               <option value="3.375">5 beans</option>
                               <option value="6.75">10 beans</option>
                               <option value='12.6'>20 beans</option> */}
-                               <option  value="1.5">2 beans</option>
-                              <option value="3">4 beans</option>
-                              <option value="3.750">5 beans</option>
-                              <option value="7.5">10 beans</option>
-                              <option value='14'>20 beans</option>
+                               <option  value="2.5">2 beans</option>
+                              <option value="5">4 beans</option>
+                              <option value="6">5 beans</option>
+                              <option value="12">10 beans</option>
+                              <option value='23'>20 beans</option>
                             </select>
                             </div>
                             <br></br>
@@ -174,7 +174,7 @@ if (state.succeeded) {
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-93vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'3vh', borderRadius:'1%'}}>
               <h2 style={{color:'white', textAlign:'center', marginTop:'7%', marginBottom:'6%', marginRight:'0%'}}>Bourbon (Planifolia) <br></br>Vanilla beans - Zanzibar</h2>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1709868748988-1A68AF97-57A5-4D55-B6C1-034FDC16C697.png" style={{height:'40vh', marginLeft:'15vw', marginTop:'-27%', marginBottom:'-19%',objectFit:'cover',rotate:'80deg'}}></img>
+                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714469528288-C28BFFC0-6FA5-4B00-AF84-B696EA2711AF.png" style={{height:'17vh', marginLeft:'0vw', marginTop:'0%', marginBottom:'0%',objectFit:'cover'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h3 style={{color:'white', textAlign:'center', marginTop:'3%'}}>Issue Order</h3>
                         <br></br>
@@ -215,11 +215,11 @@ if (state.succeeded) {
                             <select onChange={(e) => {
                                 e.preventDefault
                                 SetQuantity(event.target.value)}} type='select' required  name="quantity" id='Quantity' style={{marginRight:'3vw', marginLeft:'1vw'}}>
-                              <option  value="1.5">2 beans</option>
-                              <option value="3">4 beans</option>
-                              <option value="3.750">5 beans</option>
-                              <option value="7.5">10 beans</option>
-                              <option value='14'>20 beans</option>
+                              <option  value="2.5">2 beans</option>
+                              <option value="5">4 beans</option>
+                              <option value="6">5 beans</option>
+                              <option value="12">10 beans</option>
+                              <option value='23'>20 beans</option>
                               {/* <option  value="1.35">2 beans</option>
                               <option value="2.7">4 beans</option>
                               <option value="3.375">5 beans</option>
