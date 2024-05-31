@@ -242,27 +242,27 @@ export default function A1() {
         
         </main>}
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
-      <div className={styles.description2} style={{position:'fixed', padding:'3%', direction:'rtl', marginTop:'-10%', height:'10%', zIndex:2}}>
+      <div className={styles.description2} style={{position:'fixed', padding:'3%', direction:'rtl', marginTop:'-10%', height:'10%', zIndex:2, marginRight:'4%'}}>
       <MenuIntroduction1/>
       <Tooltip className={styles.center3} sx={{background:'black', marginLeft:'43%', maxHeight:'5vh', maxWidth:'10vw'}}  title="تصفح سلة المشتريات">
       <IconButton  href='/products/shoppingcart'>
         <ShoppingCart  sx={{color: 'bisque'}}  />
       </IconButton>
     </Tooltip>
-        <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
-          
-          <a
+    <Link
             href="/ar"
+            style={{width:'50%', marginRight:'0%'}}
             // target="_blank"
-            rel="noopener noreferrer"
-            
-            
+            // rel="noopener noreferrer"
           >
+        <div className={styles.card3} style={{position:'relative', height:'5vh',width:'65%', alignItems:'center', marginRight:'25%'}}>
+          
             
-            <Icon path={mdiFlower } style={{marginRight:-16, marginLeft:'-10%'}} size={.9} />
+            <Icon path={mdiFlower } style={{marginRight:-10, marginLeft:3}}size={.9} />
             فانيلا عمان
-          </a>
+          
         </div>
+        </Link>
         </div>
             <div  style={{zIndex:0}}>
             {isTabletOrMobile &&<motion.div  initial={{ opacity: 0, scale: 0.5 }}

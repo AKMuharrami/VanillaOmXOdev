@@ -131,23 +131,24 @@ if (state.succeeded) {
       
     </main>}
     {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)'}}>
-      <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%'}}>
+    <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%', marginLeft:'8%'}}>
     
         
-        <MenuIntroduction/>
-        <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
-          <a
-            href="/"
-            // target="_blank"
-            rel="noopener noreferrer"
-            
-            
-          >
-            
-            <Icon path={mdiFlower } style={{marginTop:'0%'}}size={.9} />
-            VanillaOm
-          </a>
-        </div>
+    <MenuIntroduction/>
+    <Link
+        href="/"
+        style={{width:'50%', marginLeft:'50%'}}
+        // target="_blank"
+        // rel="noopener noreferrer"
+      >
+    <div className={styles.card3} style={{position:'relative', height:'5vh', alignItems:'center'}}>
+      
+        
+        <Icon path={mdiFlower } style={{marginLeft:-7, marginRight:7}}size={.9} />
+        VanillaOm
+      
+    </div>
+    </Link>
       </div>
 
       <div className={styles.center00} style={{marginTop:'11vh'}}>

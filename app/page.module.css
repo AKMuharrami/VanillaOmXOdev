@@ -168,7 +168,7 @@
   padding: .1rem .1rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb1), 1);
-  transition: background 200ms, border 200ms;max-width: 31%;
+  transition: background 200ms, border 200ms;max-width: 90%;
   max-height: 100%;
 
 

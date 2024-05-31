@@ -131,24 +131,27 @@ if (state.succeeded) {
       
     </main>}
     {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)'}}>
-      <div className={styles.description1} style={{position:'fixed',padding:'3%', paddingTop:'-23%'}}>
+      <div className={styles.description1} style={{position:'fixed',padding:'3%', paddingTop:'-23%', marginRight:'5%'}}>
         
         <MenuIntroduction/>
-        <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
-          <a
+        <Link
             href="/ar"
+            style={{width:'50%', marginRight:'50%'}}
             // target="_blank"
-            rel="noopener noreferrer"
+            // rel="noopener noreferrer"
           >
+        <div className={styles.card3} style={{position:'relative', height:'4.5vh', alignItems:'center', marginBottom:'-3%'}}>
+          
             
-            <Icon path={mdiFlower } style={{marginRight:-10, marginLeft:'-10%'}}size={.9} />
+            <Icon path={mdiFlower } style={{marginRight:-10, marginLeft:5}}size={.9} />
             فانيلا عمان
-          </a>
+          
         </div>
+        </Link>
       </div>
 
       <div className={styles.center00} style={{marginTop:'11vh'}}>
-       <img  src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', right:'1%'}}/>
+       <img  src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', right:'-3%'}}/>
        <h2 className={styles.center11}  style={{width:"100%", marginRight:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', fontSize:'5vw' }}>" بسم الله... نوفر الفانيلا ذا الجودة العالية بأنواعه: أعواد الفانيلا، بودر الفانيلا، خلاصة الفانيلا (الخالية من الكحول، حيث يتم استعمال الجليسيرين في عملية الاستخلاص بدلا من الكحول)، ومعجون الفانيلا."</h2>
       </div>
 

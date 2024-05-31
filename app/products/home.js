@@ -237,26 +237,26 @@ export default function A1() {
         
         </main>}
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
-      <div className={styles.description2} style={{position:'fixed', padding:'3%', marginTop:'-10%',height:'10%'}}>
+      <div className={styles.description2} style={{position:'fixed', padding:'3%', marginTop:'-10%',height:'10%', marginLeft:'5%'}}>
       <MenuIntroduction1/>
-            <Tooltip className={styles.center3} sx={{background:'black', marginRight:'37%', maxHeight:'5vh', maxWidth:'10vw'}}  title="Visit Shopping cart">
+      <Tooltip sx={{background:'black', right:'11%', maxHeight:'4.5vh', maxWidth:'10vw'}}  title="Visit Shopping cart">
       <IconButton  href='/products/shoppingcart'>
         <ShoppingCart  sx={{color: 'bisque'}}  />
       </IconButton>
     </Tooltip>
-        <div className={styles.card3} style={{position:'relative', height:'6vh', alignItems:'center'}}>
-          <a
+        <Link
             href="/"
+            style={{width:'50%', marginRight:'0%'}}
             // target="_blank"
-            rel="noopener noreferrer"
-            
-            
+            // rel="noopener noreferrer"
           >
+        <div className={styles.card3} style={{position:'relative', height:'5vh',width:'65%', alignItems:'center', marginLeft:'25%'}}>
+          
             
-            <Icon path={mdiFlower } size={.9} />
-            VanillaOm
-          </a>
+            <Icon path={mdiFlower } style={{marginLeftt:-10, marginRight:5}}size={.9} />
+            VanillaOm          
         </div>
+        </Link>
         </div>
             <div  style={{zIndex:0}}>
             {isTabletOrMobile &&<motion.div  initial={{ opacity: 0, scale: 0.5 }}

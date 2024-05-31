@@ -193,22 +193,23 @@ if (state.succeeded) {
               <hr style={{maxWidth:"100%", width:"100%"}}></hr>
     </main>}
     {isTabletOrMobile &&<main className={styles.main1} style={{background:'rgba(10, 54, 119, 0.2 )'}}>
-      <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%'}}>
+    <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%', marginLeft:'7%'}}>
         
         <MenuIntroduction/>
-        <div className={styles.card3} style={{position:'relative', height:'8vh', alignItems:'center'}}>
-          <a
+        <Link
             href="/"
+            style={{width:'50%', marginLeft:'50%'}}
             // target="_blank"
-            rel="noopener noreferrer"
-            
-            
+            // rel="noopener noreferrer"
           >
+        <div className={styles.card3} style={{position:'relative', height:'5vh', alignItems:'center'}}>
+          
             
-            <Icon path={mdiFlower } style={{marginTop:'0%'}}size={.9} />
+            <Icon path={mdiFlower } style={{marginLeft:-7, marginRight:7}}size={.9} />
             VanillaOm
-          </a>
+          
         </div>
+        </Link>
       </div>
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-93vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'3vh', borderRadius:'1%'}}>

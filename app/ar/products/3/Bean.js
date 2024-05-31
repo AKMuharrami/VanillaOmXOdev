@@ -154,22 +154,23 @@ if (state.succeeded) {
               <hr style={{maxWidth:"100%", width:"100%"}}></hr>
     </main>}
     {isTabletOrMobile &&<main className={styles.main1} style={{background:'rgba(10, 54, 119, 0.2 )'}}>
-      <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%', direction:'rtl'}}>
+      <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%', direction:'rtl', marginRight:'5%'}}>
         
         <MenuIntroduction/>
-        <div className={styles.card3} style={{position:'relative', height:'7vh', alignItems:'center'}}>
-          <a
+        <Link
             href="/ar"
+            style={{width:'50%', marginRight:'50%'}}
             // target="_blank"
-            rel="noopener noreferrer"
-            
-            
+            // rel="noopener noreferrer"
           >
+        <div className={styles.card3} style={{position:'relative', height:'5vh', alignItems:'center'}}>
+          
             
-            <Icon path={mdiFlower } style={{marginTop:'0%'}}size={.9} />
+            <Icon path={mdiFlower } style={{marginRight:-10, marginLeft:5}}size={.9} />
             فانيلا عمان
-          </a>
+          
         </div>
+        </Link>
       </div>
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-89vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'1.75vh', borderRadius:'1%'}}>
