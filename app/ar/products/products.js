@@ -242,9 +242,9 @@ export default function A1() {
         
         </main>}
         {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)', overflow:'hidden'}}>
-      <div className={styles.description2} style={{position:'fixed', padding:'3%', direction:'rtl', marginTop:'-10%', height:'10%', zIndex:2, marginRight:'4%'}}>
+        <div className={styles.description2} style={{position:'fixed', padding:'3%', direction:'rtl', marginTop:'-10%', height:'10%', zIndex:2, marginRight:'4%'}}>
       <MenuIntroduction1/>
-      <Tooltip className={styles.center3} sx={{background:'black', marginLeft:'43%', maxHeight:'5vh', maxWidth:'10vw'}}  title="تصفح سلة المشتريات">
+      <Tooltip  sx={{background:'black', left:'13%', maxHeight:'4.5vh', maxWidth:'10vw'}}  title="تصفح سلة المشتريات">
       <IconButton  href='/products/shoppingcart'>
         <ShoppingCart  sx={{color: 'bisque'}}  />
       </IconButton>

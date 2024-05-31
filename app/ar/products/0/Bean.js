@@ -210,7 +210,7 @@ if (state.succeeded) {
     </main>}
               {isTabletOrMobile && <div> <div style={{marginTop:'-89vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'1.75vh', borderRadius:'1%'}}>
               <h2 style={{color:'white', textAlign:'center', marginTop:'-2%', marginBottom:'6%', marginRight:'-3%', textShadow: '1px 1px 5px rgb(00 11 69/ 80%)', WebkitTextStroke: '1px 0b0e13'}}>أعواد فانيلا <br></br>  بابوا نيو جيني- (بوربن)  درجة أ</h2>
-                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'21vh', marginLeft:'-4vw'}}></img>
+                    <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{height:'21vh', marginLeft:'-4%'}}></img>
                     <div style={{marginLeft:'5vw'}}>
                         <h2 style={{color:'white', textAlign:'center', fontSize:'120%', marginTop:'3%'}}>اطلب المنتج</h2>
                         <br></br>
