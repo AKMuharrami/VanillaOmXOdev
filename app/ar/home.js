@@ -34,7 +34,6 @@ const isDesktopOrLaptop = useMediaQuery({
   })
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const [Quantity, SetQuantity] = useState("2.5")
-  const [Quantityy, SetQuantityy] = useState("1");
 const [state, handleSubmit] = useForm("mvojvawp");
 if (state.succeeded) {
     handleredirect();
@@ -261,20 +260,8 @@ if (state.succeeded) {
                             </div>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
-                            <label For="Del"></label>
-                <select onChange={(e) => {
-                                e.preventDefault
-                                SetQuantityy(event.target.value)}} type="select" id='Del'>
-                <option value="1">توصيل داخل مسقط</option>
-                <option value="1.5">توصيل خارج مسقط إلى الفرع</option>
-                <option value="2">توصيل خارج مسقط مباشرة إلى المنزل</option>
-                </select>
-                            </div>
-                            <input hidden id="Tot" name="totall" value={parseFloat(Quantity) + parseFloat(Quantityy)}></input>
-                            <br></br>
-                            <div style={{display:'flex', justifyContent:'center'}}>
                             <label For="Price" style={{color:'white', fontSize:'125%', marginTop:'.35%'}}>السعر: </label>
-                              <h2 style={{marginLeft:'3vw', marginRight:'1vw'}} id='Price'>{parseFloat(Quantity) + parseFloat(Quantityy)} ريال</h2>
+                              <h2 style={{marginLeft:'3vw', marginRight:'1vw'}} id='Price'>{Quantity} ريال</h2>
                             </div>
                             <br></br>
                             <div style={{textAlign:'center'}}>
@@ -343,20 +330,8 @@ if (state.succeeded) {
                             </div>
                             <br></br>
                             <div style={{display:'flex', justifyContent:'center'}}>
-                            <label For="Del"></label>
-                <select onChange={(e) => {
-                                e.preventDefault
-                                SetQuantityy(event.target.value)}} type="select" id='Del'>
-                <option value="1">توصيل داخل مسقط</option>
-                <option value="1.5">توصيل خارج مسقط إلى الفرع</option>
-                <option value="2">توصيل خارج مسقط مباشرة إلى المنزل</option>
-                </select>
-                            </div>
-                            <input hidden id="Tot" name="totall" value={parseFloat(Quantity) + parseFloat(Quantityy)}></input>
-                            <br></br>
-                            <div style={{display:'flex', justifyContent:'center'}}>
                             <label For="Price" style={{color:'white', fontSize:'100%', marginTop:'.35%'}}>السعر: </label>
-                              <h3 style={{marginLeft:'3vw', marginRight:'1vw'}} id='Price'>{parseFloat(Quantity) + parseFloat(Quantityy)} ريال</h3>
+                              <h3 style={{marginLeft:'3vw', marginRight:'1vw'}} id='Price'>{Quantity} ريال</h3>
                             </div>
                             <br></br>
                             <div style={{textAlign:'center'}}>

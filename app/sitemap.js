@@ -13,6 +13,18 @@ export default function sitemap() {
         lastModified: new Date(),
       },
       {
+        url: 'https://vanillaom.com/products/1',
+        lastModified: new Date(),
+      },
+      {
+        url: 'https://vanillaom.com/products/2',
+        lastModified: new Date(),
+      },
+      {
+        url: 'https://vanillaom.com/products/3',
+        lastModified: new Date(),
+      },
+      {
         url: 'https://vanillaom.com/about',
         lastModified: new Date(),
       },
@@ -26,6 +38,18 @@ export default function sitemap() {
       },
       {
         url: 'https://vanillaom.com/ar/products/0',
+        lastModified: new Date(),
+      },
+      {
+        url: 'https://vanillaom.com/ar/products/1',
+        lastModified: new Date(),
+      },
+      {
+        url: 'https://vanillaom.com/ar/products/2',
+        lastModified: new Date(),
+      },
+      {
+        url: 'https://vanillaom.com/ar/products/3',
         lastModified: new Date(),
       },
       {

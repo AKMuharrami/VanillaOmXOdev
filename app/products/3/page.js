@@ -5,10 +5,10 @@ const Home = dynamic(() => import('./Bean'), {
   ssr: false
 })
 export const metadata = {
-    title: "Bourbon (Planifolia) Vanilla Beans - Oman",
-    description: "Get your Grade A Bourbon Vanilla Beans from Papua New Guinea deleiverd today - Oman",
+    title: "Tahitian Vanilla Beans - Oman",
+    description: "Get your Grade A Tahitian Vanilla Beans from Papua New Guinea deleiverd today - Oman",
     alternates: {
-      canonical: '/products/0'
+      canonical: '/products/3'
     }
   };
 
