@@ -76,15 +76,15 @@ else {
 let mchecklist =  () =>  {
   if (lsv()) {return cart.map((check) => {
   return(
-    <div style={{marginRight:'auto', marginLeft:'auto', width:'90%', }}>
+    <div style={{marginRight:'auto', marginLeft:'auto', width:'100%', }}>
         <a
         // href="/articles/1"
         className={styles.card2}
-        style={{display:'ruby-text', marginLeft:'0%', maxWidth:'80vw'}}
+        style={{display:'ruby-text', marginLeft:'0%', maxWidth:'100%'}}
         
         >
      <div style={{display:"flex",}} >
-        <img src={check.Img} alt='' style={{width:'20vh', objectFit:"cover",maxWidth:"15vw", maxHeight:"13vh", overflow:'visible'}} ></img>
+        <img src={check.Img} alt='' style={{width:'20vh', objectFit:"cover",maxWidth:"15vw", maxHeight:"15vh", overflow:'visible'}} ></img>
         <div style={{maxWidth:"100vw", marginLeft:"1%", paddingTop:"1%"}}>
         
          <h2 style={{textAlign:'center'}}>
