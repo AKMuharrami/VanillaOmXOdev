@@ -420,7 +420,7 @@ if (state.succeeded) {
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
        <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever."</h2>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%'}} onClick={() => {
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%', zIndex:7}} onClick={() => {
                       
                       const CT = {
                         id:1,
