@@ -1,7 +1,7 @@
 import Home from "./home";
 export const metadata = {
-    title: "Vanilla Oman",
-    description: "We offer quality guranteed vanilla in its various forms: beans, poweder, paste, extract (free of alcohol, as glycerene is used as perservative instead) - Muscat",
+    title: "CMAG",
+    description: "High Quality Bakery - Muscat",
     alternates: {
       canonical: '/'
     }

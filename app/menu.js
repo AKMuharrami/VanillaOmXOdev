@@ -17,11 +17,11 @@ export default function MenuIntroduction() {
     <Dropdown style={{color:'black'}}>
       <MenuButton>=</MenuButton>
       <Menu slots={{ listbox: Listbox }}>
-        <a href='/products' ><MenuItem onClick={createHandleMenuClick('Profile')}>Products</MenuItem></a>
-        <a href='/about'><MenuItem onClick={createHandleMenuClick('Language settings')}>
+        <a href='/products' ><MenuItem onClick={createHandleMenuClick('Profile')}>Coming Soon</MenuItem></a>
+        {/* <a href='/about'><MenuItem onClick={createHandleMenuClick('Language settings')}>
           About
         </MenuItem></a>
-        <a href='/ar' style={{color:'blue'}}><MenuItem onClick={createHandleMenuClick('Log out')}>عربي</MenuItem></a>
+        <a href='/ar' style={{color:'blue'}}><MenuItem onClick={createHandleMenuClick('Log out')}>عربي</MenuItem></a> */}
       </Menu>
     </Dropdown>
   );
