@@ -13,11 +13,14 @@ import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 export default function Home() {
   const ref = useRef(null);
-  const aaa = localStorage.setItem('Cart', '')
   async function a() {
       await ref.current?.scrollIntoView({behavior:'smooth', block:'center'})    }
-  const lsv = JSON.parse(localStorage.getItem("Cart") || ['']);
-  const [dd, setdd] = useState(aaa)
+  const lsv = () =>  {if (JSON.parse(localStorage.getItem("Cart") === undefined)) {
+    return ('')}
+    else{
+      return JSON.parse(localStorage.getItem('Cart'))
+    }}
+  ;
   const [cart,setcart] = useState(lsv)
   let p = ""
   const d = () => {
