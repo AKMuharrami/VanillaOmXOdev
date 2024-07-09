@@ -442,7 +442,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}} onClick={a}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%', zIndex:7}} onClick={a}>Order Now</button>
 
       </div>
       </div>
@@ -478,7 +478,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}} onClick={a}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%', zIndex:6}} onClick={a}>Order Now</button>
 
       </div>
       </div>
