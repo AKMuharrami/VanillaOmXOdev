@@ -692,7 +692,7 @@ if (state.succeeded) {
                         <br></br>
                         <form onSubmit={handleSubmit}>
                             <div style={{display:'flex', justifyContent:'space-evenly'}}>
-                            <input id='Prod' type="hidden" name="Prod" value={JSON.stringify(t)} style={{ height:'2.5vh'}}></input>
+                            <input id='Prod' type="hidden" name="Prod" value={JSON.stringify(lsv())} style={{ height:'2.5vh'}}></input>
                                 <input id='pri' type="hidden" name="pri" value={totall + parseFloat(Quantity)} style={{ height:'2.5vh'}}></input>
                                 <label for="Name" style={{color:'white', fontSize:'100%'}}>Name </label>
                                 <input id='Name' type="text" required name="Name" style={{marginRight:'3vw', height:'2vh', width:'25vw', marginLeft:'1vw'}}></input>
