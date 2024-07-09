@@ -223,7 +223,7 @@ if (state.succeeded) {
       </div> */}
       
     </main>}
-    {isTabletOrMobile &&<main className={styles.main} style={{background:'rgba(205, 195, 177,.7)'}}>
+    {isTabletOrMobile &&<main className={styles.main} style={{background:'#F0D8DB'}}>
     <div className={styles.description1} style={{position:'fixed', padding:'3%', paddingTop:'-13%', marginLeft:'8%'}}>
     
         
