@@ -76,7 +76,7 @@ else {
 let mchecklist =  () =>  {
   if (lsv()) {return cart.map((check) => {
   return(
-    <div  className={styles.card2} >
+    <div  className={styles.card2} style={{width:'60%', marginRight:'auto', marginLeft:'auto'}} >
         <a
         // href="/articles/1"
        
@@ -159,7 +159,7 @@ if (state.succeeded) {
             rel="noopener noreferrer"
           >
             
-            <Icon path={mdiFlower } style={{marginRight:2}}size={1} />
+            <Icon path={mdiFlower } style={{marginRight:1}} size={1} />
             Crunch&Munch
           </a>
         </div>
@@ -237,16 +237,16 @@ if (state.succeeded) {
     <div className={styles.card3} style={{position:'relative', height:'5vh', alignItems:'center'}}>
       
         
-        <Icon path={mdiFlower } style={{marginLeft:-7, marginRight:7}}size={.9} />
+        <Icon path={mdiFlower } style={{marginLeft:1, marginRight:1}}size={.9} />
         Crunch&Munch
       
     </div>
     </Link>
       </div>
 
-      <div className={styles.center00} style={{marginTop:'11vh'}}>
+      <div className={styles.center00} style={{marginTop:'15vh'}}>
        <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163508-D2DB7369-76F9-4143-8F6C-5BCD545A608D.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', left:'1%'}}/>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)' }}>"Bismillah...this is a compensation for you for all the thought and effort you put into helping us. (You can write here whatever, just give us the description and we'll place it)."</h2>
+       <h2   style={{width:"100%", marginTop:"25%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#72001a', zIndex:13 }}>"Bismillah...this is a compensation for you for all the thought and effort you put into helping us. (You can write here whatever, just give us the description and we'll place it)."</h2>
       </div>
 
       {/* <div className={styles.grid} style={{color:'#F2F0DF'}}>
@@ -557,9 +557,9 @@ if (state.succeeded) {
        <br></br>
        <button className={styles.card1} style={{background:'rgba(250, 250, 250, .5)', color:'black'}} onClick={d}>Delete</button>
         </div>}
-        {isTabletOrMobile && <div style={{display:'grid', marginRight:'auto', marginLeft:'auto'}}>
+        {isTabletOrMobile && <div style={{display:'grid', marginRight:'auto', marginLeft:'auto', paddingBottom:'10%'}}>
         {mchecklist()}
-        <div className={styles.card2} style={{textAlign:'center'}}>
+        <div className={styles.card2} style={{width:'63%',textAlign:'center', marginRight:'auto', marginLeft:'auto'}}>
             <form>
                 <label For="Del"></label>
                 <select onChange={(e) => {
@@ -573,9 +573,9 @@ if (state.succeeded) {
         </div>
        <h2 className={styles.card2} style={{textAlign:'center'}}> Total is = {totall + parseFloat(Quantity)} Omr </h2>
        <br></br>
-       <button className={styles.card1} onClick={a}>Continue</button>
+       <button className={styles.card1} style={{width:'50%',textAlign:'center', marginRight:'auto', marginLeft:'auto'}} onClick={a}>Continue</button>
        <br></br>
-       <button className={styles.card1} style={{background:'rgba(250, 250, 250, .5)', color:'black'}} onClick={d}>Delete</button>
+       <button className={styles.card1} style={{background:'rgba(250, 250, 250, .5)', color:'black', width:'50%',textAlign:'center', marginRight:'auto', marginLeft:'auto'}} onClick={d}>Delete</button>
         </div>}
         {isDesktopOrLaptop &&<main className={styles.main} ref={ref} style={{background:''}}>
       <div className={styles.center1} style={{display:'block'}}>

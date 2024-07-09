@@ -10,13 +10,13 @@ export const cairo = Cairo({
 })
 export const metadata = {
   title: {
-    default:'Vanilla Oman',
-    template:'%s - VanillaOm'
+    default:'CMAJ',
+    template:'%s - CMAJ'
   },
-  description: 'Vanilla pods, extract, powder, paste - Oman',
+  description: 'Expertise Bakery - Oman',
   openGraph: {
-    title: 'Vanilla Oman',
-    description: 'We provide Vanilla products (beans, extract, paste, powder) - Oman'
+    title: 'CMAJ',
+    description: 'We provide various delecious treats - Oman'
   }
 }
 
