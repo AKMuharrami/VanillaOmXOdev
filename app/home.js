@@ -167,7 +167,7 @@ if (state.succeeded) {
 
       <div className={styles.center} style={{marginTop:'20vh'}}>
        <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163508-D2DB7369-76F9-4143-8F6C-5BCD545A608D.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h1 className={styles.center1}  style={{width:"45%", marginLeft:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#BA5971' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h1>
+       <h1 className={styles.center1}  style={{width:"45%", marginLeft:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#BA5971' }}>"Bismillah...this is a compensation for you for all the thought and effort you put into helping us. (You can write here whatever, just give us the description and we'll place it)."</h1>
       </div>
 
       {/* <div className={styles.grid} style={{color:'#F2F0DF'}}>
@@ -246,7 +246,7 @@ if (state.succeeded) {
 
       <div className={styles.center00} style={{marginTop:'11vh'}}>
        <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163508-D2DB7369-76F9-4143-8F6C-5BCD545A608D.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', left:'1%'}}/>
-       <h3 className={styles.center1}  style={{width:"100%", marginLeft:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 11 69/ 80%)' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h3>
+       <h2 className={styles.center1}  style={{width:"100%", marginLeft:"0%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)' }}>"Bismillah...this is a compensation for you for all the thought and effort you put into helping us. (You can write here whatever, just give us the description and we'll place it)."</h2>
       </div>
 
       {/* <div className={styles.grid} style={{color:'#F2F0DF'}}>
@@ -311,7 +311,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>10 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h1>
+       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>""Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%', zIndex:6}} onClick={() => {
                       
                       const CT = {
@@ -347,7 +347,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>14 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h1>
+       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%'}} onClick={() => {
                       
                       const NYC = {
@@ -383,7 +383,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>9 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h1>
+       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%'}} onClick={() => {
                       
                       const SB = {
@@ -419,7 +419,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>10 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h2>
+       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever."</h2>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%'}} onClick={() => {
                       
                       const CT = {
@@ -455,7 +455,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>14 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h2>
+       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever."</h2>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%', zIndex:6}} onClick={() => {
                       
                       const NYC = {
@@ -491,7 +491,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>9 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h2>
+       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h2>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%'}} onClick={() => {
                       
                       const SB = {
