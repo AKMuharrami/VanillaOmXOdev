@@ -12,7 +12,6 @@ import {motion} from 'framer-motion'
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 export default function Home() {
-  localStorage.setItem('Cart', "")
   const ref = useRef(null);
   async function a() {
       await ref.current?.scrollIntoView({behavior:'smooth', block:'center'})    }
