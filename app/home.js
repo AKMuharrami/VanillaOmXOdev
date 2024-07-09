@@ -312,7 +312,7 @@ if (state.succeeded) {
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
        <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"In the name of Allah... We offer quality guranteed vanilla in its various forms: beans, poweders, extracts (free of alcohol, as glycerene is used as perservative instead)"</h1>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%'}} onClick={() => {
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%', zIndex:6}} onClick={() => {
                       
                       const CT = {
                         id:1,
@@ -334,7 +334,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'20%', marginTop:'1%'}}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'20%', marginTop:'1%'}} onClick={a}>Order Now</button>
 
       </div>
       </div>
@@ -370,7 +370,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'20%', marginTop:'1%'}}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'20%', marginTop:'1%'}} onClick={a}>Order Now</button>
 
       </div>
       </div>
@@ -406,7 +406,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'20%', marginTop:'1%'}}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'20%', marginTop:'1%'}} onClick={a}>Order Now</button>
 
       </div>
       </div>
@@ -442,7 +442,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}} onClick={a}>Order Now</button>
 
       </div>
       </div>
@@ -478,7 +478,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}} onClick={a}>Order Now</button>
 
       </div>
       </div>
@@ -514,7 +514,7 @@ if (state.succeeded) {
                       
                       
                     }}>Add to Cart</button>
-       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}}>Order Now</button>
+       <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'50%', marginTop:'1%'}} onClick={a}>Order Now</button>
 
       </div>
       </div>
@@ -553,7 +553,7 @@ if (state.succeeded) {
         </div>
        <h2 className={styles.card2} style={{textAlign:'center'}}> Total is = {totall + parseFloat(Quantity)} Omr </h2>
        <br></br>
-       <button className={styles.card1} onClick={a}>Continue</button>
+       <button className={styles.card1}  onClick={a}>Continue</button>
        <br></br>
        <button className={styles.card1} style={{background:'rgba(250, 250, 250, .5)', color:'black'}} onClick={d}>Delete</button>
         </div>}
@@ -684,6 +684,54 @@ if (state.succeeded) {
         <hr style={{maxWidth:"100%", width:"100%"}}></hr>
       </main>}
               
+      {isTabletOrMobile && <main className={styles.main} ref={ref} style={{background:'rgba(10, 54, 119, 0.2)'}}>
+      <div className={styles.center1} style={{display:'block'}}>
+         <div style={{marginTop:'10vh', backgroundColor:'rgba(205, 195, 177,.1)', padding:'5vh',paddingTop:'5vh',paddingBottom:'3vh', borderRadius:'1%'}}>
+                    <div style={{marginLeft:'5vw'}}>
+                        <h3 style={{color:'white', textAlign:'center', marginTop:'-3%'}}>Issue Order</h3>
+                        <br></br>
+                        <form onSubmit={handleSubmit}>
+                            <div style={{display:'flex', justifyContent:'space-evenly'}}>
+                            <input id='Prod' type="hidden" name="Prod" value={JSON.stringify(t)} style={{ height:'2.5vh'}}></input>
+                                <input id='pri' type="hidden" name="pri" value={totall + parseFloat(Quantity)} style={{ height:'2.5vh'}}></input>
+                                <label for="Name" style={{color:'white', fontSize:'100%'}}>Name </label>
+                                <input id='Name' type="text" required name="Name" style={{marginRight:'3vw', height:'2vh', width:'25vw', marginLeft:'1vw'}}></input>
+                                <label for='Tel' style={{color:'white', fontSize:'100%'}}>Telephone </label>
+                                <input id='Tel' required type="tel" name="Tel" style={{marginRight:'3vw', width:'25vw', marginLeft:'1vw'}}></input>
+
+                            </div>
+                            <br></br>
+                            <div style={{display:'flex', justifyContent:'space-evenly'}}>
+                            <label for="Email" style={{color:'white', fontSize:'100%'}}>Email </label>
+                            <input id="Email" name="Email" type='email'style={{marginRight:'3vw', height:'2vh', width:'25vw', marginLeft:'1vw'}}></input>
+                            <label For='City' style={{color:'white', fontSize:'100%'}}>Country </label>
+                            <input id='City' name="City" value='Oman'  disabled type='text' style={{marginRight:'3vw',  width:'9.5vw', height:'2vh', marginLeft:'1vw'}}></input>
+                            <label For='City' style={{color:'white', fontSize:'100%'}}>  City </label>
+                            <input id='City' required name="City" type='text' style={{marginRight:'3vw', height:'2vh', width:'11vw', marginLeft:'1vw'}}></input>
+                            
+                            </div>
+                            <br></br>
+                            <div style={{display:'flex',justifyContent:'center'}}>
+                            <label For="Town" style={{color:'white', fontSize:'100%'}}>Town </label>
+                            <input type='text' required name="Town" id='Town' style={{marginRight:'3vw', height:'2vh', width:'11vw', marginLeft:'1vw'}}></input>
+                            <label For='POC' style={{color:'white', fontSize:'100%'}}>House No</label>
+                            <input id='POC' name="POC" type='text' style={{ height:'2vh', marginLeft:'1vw',width:'26vw'}}></input>
+                            </div>
+                            <br></br>
+                            <div style={{display:'flex', justifyContent:'center'}}>
+                            <label For="Gloc" style={{color:'white', fontSize:'100%'}}>Google Maps Location (opt) </label>
+                            <input id="Gloc" name="Gloc" type="url" style={{ height:'2vh', width:'16vw',marginLeft:'1vw', overflow:'scroll'}}></input>
+                            </div>
+                            <br></br>
+                            <div style={{textAlign:'center'}}>
+                            <input style={{height:'4vh', width:'18vw'}} type='submit'></input>
+                        </div>
+                    </form>
+                   
+                </div>
+                </div>
+              </div>
+              </main>}       
       {/* <div className={styles.grid1} style={{marginTop:''}}>
       <a
           href="/articles/1"
