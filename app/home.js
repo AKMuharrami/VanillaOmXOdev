@@ -74,7 +74,7 @@ else {
   return ''
 }}
 let mchecklist =  () =>  {
-  if (lsv()) {cart.map((check) => {
+  if (lsv()) {return cart.map((check) => {
   return(
     <div style={{marginRight:'auto', marginLeft:'auto', width:'90%', }}>
         <a
