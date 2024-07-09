@@ -15,18 +15,17 @@ export default function Home() {
   const ref = useRef(null);
   async function a() {
       await ref.current?.scrollIntoView({behavior:'smooth', block:'center'})    }
-  const lsv = () =>  {if (JSON.parse(localStorage.getItem("Cart") === undefined)) {
-    return ('')}
-    else{
-      return JSON.parse(localStorage.getItem('Cart'))
-    }}
-  ;
-  const [cart,setcart] = useState(lsv)
+  const lsv = () => { if (localStorage.getItem("Cart")) { return JSON.parse(localStorage.getItem("Cart") || ['']);}
+else {
+  return ""
+}}
+console.log(lsv())
+  const [cart,setcart] = useState(lsv())
   let p = ""
   const d = () => {
-    p = lsv
+    p = lsv()
     p.pop()
-    console.log(lsv)
+    console.log(lsv())
     console.log(p)
     localStorage.removeItem("Cart");
     localStorage.setItem("Cart",JSON.stringify(p))
@@ -34,17 +33,18 @@ export default function Home() {
     
 
 }
-const n = lsv.length
-console.log(lsv[1])
+const n = lsv().length
+console.log(lsv()[1])
 console.log(n)
 let totall = 0
   for (let index = 0; index < n ; index++) {
-      const element = lsv[index];
+      const element = lsv()[index];
       totall += parseFloat(element.Q)
     console.log(totall)
   }
 console.log(totall)
-let dchecklist =  lsv.map((check) => {
+let dchecklist = () =>  {
+  if (lsv()) { return cart.map((check) => {
   return(
     <div style={{marginRight:'auto', marginLeft:'auto', width:'70%', }}>
         <a
@@ -69,8 +69,12 @@ let dchecklist =  lsv.map((check) => {
    </a>
     </div>
 )
-})
-let mchecklist =  lsv.map((check) => {
+})}
+else {
+  return ''
+}}
+let mchecklist =  () =>  {
+  if (lsv()) {cart.map((check) => {
   return(
     <div style={{marginRight:'auto', marginLeft:'auto', width:'90%', }}>
         <a
@@ -95,7 +99,10 @@ let mchecklist =  lsv.map((check) => {
    </a>
     </div>
 )
-})
+})}
+else {
+  return ''
+}}
   useEffect(() => {
     localStorage.setItem("Cart", JSON.stringify(cart))
   }, [cart])
@@ -314,7 +321,7 @@ if (state.succeeded) {
                         Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163591-1819872F-8411-425C-9CDF-D3136ABC26E5.png"
                       }
 
-                      if (lsv == "undefined") {
+                      if (lsv() == "undefined") {
                         setcart(CT)
                         window.localStorage.setItem("Cart", JSON.stringify(cart))
                       }
@@ -350,7 +357,7 @@ if (state.succeeded) {
                         Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163482-A16482AC-2FAB-48DD-AF8E-79162D6B9725.png"
                       }
 
-                      if (lsv == "undefined") {
+                      if (lsv() == "undefined") {
                         setcart(NYC)
                         window.localStorage.setItem("Cart", JSON.stringify(cart))
                       }
@@ -386,7 +393,7 @@ if (state.succeeded) {
                         Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163488-A2973587-73CA-4598-99A9-D3F672FCDBA8.png"
                       }
 
-                      if (lsv == "undefined") {
+                      if (lsv() == "undefined") {
                         setcart(SB)
                         window.localStorage.setItem("Cart", JSON.stringify(cart))
                       }
@@ -422,7 +429,7 @@ if (state.succeeded) {
                         Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163591-1819872F-8411-425C-9CDF-D3136ABC26E5.png"
                       }
 
-                      if (lsv == "undefined") {
+                      if (lsv() == "undefined") {
                         setcart(CT)
                         window.localStorage.setItem("Cart", JSON.stringify(cart))
                       }
@@ -458,7 +465,7 @@ if (state.succeeded) {
                         Img:'https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163482-A16482AC-2FAB-48DD-AF8E-79162D6B9725.png'
                       }
 
-                      if (lsv == "undefined") {
+                      if (lsv() == "undefined") {
                         setcart(NYC)
                         window.localStorage.setItem("Cart", JSON.stringify(cart))
                       }
@@ -494,7 +501,7 @@ if (state.succeeded) {
                         Img:'https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163488-A2973587-73CA-4598-99A9-D3F672FCDBA8.png'
                       }
 
-                      if (lsv == "undefined") {
+                      if (lsv() == "undefined") {
                         setcart(SB)
                         window.localStorage.setItem("Cart", JSON.stringify(cart))
                       }
@@ -531,7 +538,7 @@ if (state.succeeded) {
     <main className={styles.main} style={{background:'rgba(10, 54, 119, 0.2)'}}>
     <div className={styles.center1} style={{display:'block'}}>
     {isDesktopOrLaptop && <div style={{display:'grid', marginRight:'auto', marginLeft:'auto'}}>
-        {dchecklist}
+        {dchecklist()}
         <div className={styles.card2} style={{textAlign:'center'}}>
             <form>
                 <label For="Del"></label>
@@ -551,7 +558,7 @@ if (state.succeeded) {
        <button className={styles.card1} style={{background:'rgba(250, 250, 250, .5)', color:'black'}} onClick={d}>Delete</button>
         </div>}
         {isTabletOrMobile && <div style={{display:'grid', marginRight:'auto', marginLeft:'auto'}}>
-        {mchecklist}
+        {mchecklist()}
         <div className={styles.card2} style={{textAlign:'center'}}>
             <form>
                 <label For="Del"></label>
@@ -579,7 +586,7 @@ if (state.succeeded) {
                         <br></br>
                         <form onSubmit={handleSubmit}>
                             <div style={{display:'flex', justifyContent:'center'}}>
-                                <input id='Prod' type="hidden" name="Prod" value={JSON.stringify(lsv)} style={{ height:'2.5vh'}}></input>
+                                <input id='Prod' type="hidden" name="Prod" value={JSON.stringify(lsv())} style={{ height:'2.5vh'}}></input>
                                 <input id='pri' type="hidden" name="pri" value={totall + parseFloat(Quantity)} style={{ height:'2.5vh'}}></input>
                                 <label for="Name" style={{color:'white', fontSize:'125%'}}>Name </label>
                                 <input id='Name' type="text" required name="Name" style={{marginRight:'3vw', height:'2.5vh', marginLeft:'1vw'}}></input>
