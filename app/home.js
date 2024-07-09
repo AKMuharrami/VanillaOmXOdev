@@ -311,7 +311,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>10 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>""Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h1>
+       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>""Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%', zIndex:6}} onClick={() => {
                       
                       const CT = {
@@ -347,7 +347,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>14 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h1>
+       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%'}} onClick={() => {
                       
                       const NYC = {
@@ -383,7 +383,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>9 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h1>
+       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%'}} onClick={() => {
                       
                       const SB = {
@@ -419,7 +419,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>10 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever."</h2>
+       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever."</h2>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%'}} onClick={() => {
                       
                       const CT = {
@@ -455,7 +455,7 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>14 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever."</h2>
+       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever."</h2>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%', zIndex:6}} onClick={() => {
                       
                       const NYC = {
@@ -491,13 +491,13 @@ if (state.succeeded) {
        <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>9 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want write, a description, a quote, ingredients or whatever. "</h2>
+       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h2>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%'}} onClick={() => {
                       
                       const SB = {
                         id:3,
                         Bname:"Signature Basboosa",
-                        Q:'14',
+                        Q:'9',
                         Img:'https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163488-A2973587-73CA-4598-99A9-D3F672FCDBA8.png'
                       }
 
