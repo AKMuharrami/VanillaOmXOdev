@@ -75,6 +75,13 @@
       rgba(0, 0, 0, 0.197),
       rgba(238, 215, 219, 0.711)
     );
+    --primary-glow22: radial-gradient(rgba(251, 202, 202, 0.115), rgba(249, 203, 203, 0.137));
+    --secondary-glow22: linear-gradient(
+      to bottom right,
+      rgba(238, 215, 219, 0.285),
+      rgba(0, 0, 0, 0),
+      rgba(238, 215, 219, 0.211)
+    );
     --primary-glow3: radial-gradient(rgba(251, 202, 202, 0.915), rgba(249, 203, 203, 0.837));
     --secondary-glow3: linear-gradient(
       to bottom right,

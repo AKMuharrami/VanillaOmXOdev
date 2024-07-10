@@ -507,6 +507,40 @@
   transform: translateZ(0);
 }
 
+.center111 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+  z-index: 0;
+}
+
+.center111::before {
+  background: var(--secondary-glow22);
+  border-radius: 50%;
+  width: 480px;
+  height: 360px;
+  margin-left: -400px;
+  z-index: 2;
+}
+
+.center111::after {
+  background: var(--primary-glow22);
+  width: 640px;
+  height: 180px;
+  z-index: 1;
+}
+
+.center111::before,
+.center111::after {
+  content: '';
+  left: 5%;
+  position: absolute;
+  filter: blur(70px);
+  transform: translateZ(0);
+}
+
 .center11 {
   display: flex;
   justify-content: center;

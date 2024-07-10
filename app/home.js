@@ -159,15 +159,15 @@ if (state.succeeded) {
             rel="noopener noreferrer"
           >
             
-            <Icon path={mdiFlower } style={{marginRight:1}} size={1} />
-            Crunch&Munch
+            <Icon path={mdiFlower } style={{marginRight:2}} size={1} />
+            VanillaOm
           </a>
         </div>
       </div>
 
       <div className={styles.center} style={{marginTop:'20vh'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163508-D2DB7369-76F9-4143-8F6C-5BCD545A608D.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h1 className={styles.center1}  style={{width:"45%", marginLeft:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#BA5971' }}>"Bismillah...this is a compensation for you for all the thought and effort you put into helping us. (You can write here whatever, just give us the description and we'll place it)."</h1>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
+       <h1 className={styles.center1}  style={{width:"45%", marginLeft:"10%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#BA5971' }}>"Bismillah...this is the template website for the official collab between VanillaOm X Odev. (You can write here whatever, just give us the description and we'll place it)."</h1>
       </div>
 
       {/* <div className={styles.grid} style={{color:'#F2F0DF'}}>
@@ -237,16 +237,16 @@ if (state.succeeded) {
     <div className={styles.card3} style={{position:'relative', height:'5vh', alignItems:'center'}}>
       
         
-        <Icon path={mdiFlower } style={{marginLeft:1, marginRight:1}}size={.9} />
-        Crunch&Munch
+        <Icon path={mdiFlower } style={{marginLeft:-7, marginRight:7}}size={.9} />
+        VanillOm
       
     </div>
     </Link>
       </div>
 
-      <div className={styles.center00} style={{marginTop:'15vh'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163508-D2DB7369-76F9-4143-8F6C-5BCD545A608D.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', left:'1%'}}/>
-       <h2   style={{width:"100%", marginTop:"25%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#72001a', zIndex:13 }}>"Bismillah...this is a compensation for you for all the thought and effort you put into helping us. (You can write here whatever, just give us the description and we'll place it)."</h2>
+      <div className={styles.center00} style={{marginTop:'12vh'}}>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707820252699-58BC667A-678E-49C1-A969-E2B980FB1455.png" style={{width:'35vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"47vh", overflow:'visible',position:'relative', left:'1%'}}/>
+       <h2   style={{width:"100%", marginTop:"20%",WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#842d42', zIndex:13 }}>"Bismillah...this is the template website for the official collab between VanillaOm X Odev. (You can write here whatever, just give us the description and we'll place it)."</h2>
       </div>
 
       {/* <div className={styles.grid} style={{color:'#F2F0DF'}}>
@@ -306,19 +306,19 @@ if (state.succeeded) {
     {isDesktopOrLaptop && <main className={styles.main} style={{background:'#DA9AA7'}}>
     <div className={styles.center} style={{marginTop:'17vh'}}>
       <div style={{display:'flex', flexDirection:'column', marginLeft:'6%'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163591-1819872F-8411-425C-9CDF-D3136ABC26E5.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h1 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>Classic Tirimasu</h1>
-       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>10 rials</h1>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png" style={{width:'55vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'0%', mixBlendMode:''}}/>
+       <h1 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5, textAlign:'center'}}>1x 100ml Premium <br></br> Vanilla Paste</h1>
+       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>11.8 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>""Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
+       <h1 className={styles.center1}  style={{width:"68%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%', zIndex:6}} onClick={() => {
                       
                       const CT = {
                         id:1,
-                        Bname:"Classic Tirimasu",
-                        Q:'10',
-                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163591-1819872F-8411-425C-9CDF-D3136ABC26E5.png"
+                        Bname:"100ml Premium Vanilla Paste",
+                        Q:'11.8',
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png"
                       }
 
                       if (lsv() == "undefined") {
@@ -342,19 +342,19 @@ if (state.succeeded) {
       {isDesktopOrLaptop && <main className={styles.main} style={{background:'#c67585'}}>
     <div className={styles.center002} style={{marginTop:'17vh'}}>
       <div style={{display:'flex', flexDirection:'column', marginLeft:'6%'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163482-A16482AC-2FAB-48DD-AF8E-79162D6B9725.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h1 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>New York CheeseCake</h1>
-       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>14 rials</h1>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
+       <h1 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5, textAlign:'center'}}>2x Grade A PNG <br></br> Vanilla Beans</h1>
+       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>2.5 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
+       <h1 className={styles.center111}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%'}} onClick={() => {
                       
                       const NYC = {
                         id:2,
-                        Bname:"New York CheeseCake",
-                        Q:'14',
-                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163482-A16482AC-2FAB-48DD-AF8E-79162D6B9725.png"
+                        Bname:"2x Grade A Vanilla Beans",
+                        Q:'2,5',
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png"
                       }
 
                       if (lsv() == "undefined") {
@@ -378,19 +378,19 @@ if (state.succeeded) {
       {isDesktopOrLaptop && <main className={styles.main} style={{background:'#B65A73'}}>
     <div className={styles.center001} style={{marginTop:'17vh'}}>
       <div style={{display:'flex', flexDirection:'column', marginLeft:'6%'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163488-A2973587-73CA-4598-99A9-D3F672FCDBA8.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h1 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', textAlign:'center', zIndex:5 }}>Signature Basboosa <br></br>with Cream</h1>
-       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>9 rials</h1>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
+       <h1 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', textAlign:'center', zIndex:5 }}>1x 100ml Alcohol Free<br></br>Vanilla Extract</h1>
+       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>10 rials</h1>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h1 className={styles.center1}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
+       <h1 className={styles.center1111}  style={{width:"65%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26', zIndex:7, marginBottom:'7%', marginTop:'10%' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h1>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'30%'}} onClick={() => {
                       
                       const SB = {
-                        id:2,
-                        Bname:"Signature Basbosa",
-                        Q:'9',
-                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163488-A2973587-73CA-4598-99A9-D3F672FCDBA8.png"
+                        id:3,
+                        Bname:"100ml Vanilla Extract",
+                        Q:'10',
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png"
                       }
 
                       if (lsv() == "undefined") {
@@ -413,10 +413,10 @@ if (state.succeeded) {
       </main>}
       {isTabletOrMobile && <main className={styles.main} style={{background:'#DA9AA7'}}>
     <div className={styles.center01} style={{marginTop:'-40vh', display:'flex', flexDirection:'column'}}>
-      <div style={{display:'flex', flexDirection:'column', marginLeft:'0%', marginTop:'155%'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163591-1819872F-8411-425C-9CDF-D3136ABC26E5.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h2 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>Classic Tirimasu</h2>
-       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>10 rials</h1>
+      <div style={{display:'flex', flexDirection:'column', marginLeft:'0%', marginTop:'162%'}}>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
+       <h2 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>1x 100ml Premium <br></br> Vanilla Paste</h2>
+       <h2 style={{marginLeft:'auto',marginRight:'auto', marginTop:'3%', color:'#4F2D26', marginBottom:'-5%', opacity:.8}}>11.8 rials</h2>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
        <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever."</h2>
@@ -424,9 +424,9 @@ if (state.succeeded) {
                       
                       const CT = {
                         id:1,
-                        Bname:"Classic Tirimasu",
-                        Q:'10',
-                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163591-1819872F-8411-425C-9CDF-D3136ABC26E5.png"
+                        Bname:"100ml Premium Vanilla Paste",
+                        Q:'11.8',
+                        Img:"https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1714371401228-000A4169-D107-4A0C-829C-275AF24C1CFA.png"
                       }
 
                       if (lsv() == "undefined") {
@@ -450,9 +450,9 @@ if (state.succeeded) {
       {isTabletOrMobile && <main className={styles.main} style={{background:'#c67585'}}>
     <div className={styles.center02} style={{marginTop:'-40vh', display:'flex', flexDirection:'column'}}>
       <div style={{display:'flex', flexDirection:'column', marginLeft:'0%', marginTop:'155%'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163482-A16482AC-2FAB-48DD-AF8E-79162D6B9725.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h2 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>New York CheeseCake</h2>
-       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>14 rials</h1>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png" style={{width:'55vh', objectFit:"cover",maxWidth:"69vw", maxHeight:"59vh", overflow:'visible',position:'relative', left:'0%', mixBlendMode:''}}/>
+       <h2 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>2x Grade A PNG <br></br> Vanilla Beans</h2>
+       <h2 style={{marginLeft:'auto',marginRight:'auto', marginTop:'3%', color:'#4F2D26', marginBottom:'-5%', opacity:.8}}>2.5 rials</h2>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
        <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever."</h2>
@@ -460,9 +460,9 @@ if (state.succeeded) {
                       
                       const NYC = {
                         id:2,
-                        Bname:"New York CheeseCake",
-                        Q:'14',
-                        Img:'https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163482-A16482AC-2FAB-48DD-AF8E-79162D6B9725.png'
+                        Bname:"2x Grade A Vanilla Beans",
+                        Q:'2.5',
+                        Img:'https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1707456012314-55B14664-3E9B-4B6F-8EEC-356C64406618.png'
                       }
 
                       if (lsv() == "undefined") {
@@ -484,21 +484,21 @@ if (state.succeeded) {
       </div>
       </main>}
       {isTabletOrMobile && <main className={styles.main} style={{background:'#B65A73'}}>
-    <div className={styles.center03} style={{marginTop:'-40vh', display:'flex', flexDirection:'column'}}>
-      <div style={{display:'flex', flexDirection:'column', marginLeft:'0%', marginTop:'155%'}}>
-       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163488-A2973587-73CA-4598-99A9-D3F672FCDBA8.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
-       <h2 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>Signature Basboosa</h2>
-       <h1 style={{marginLeft:'auto',marginRight:'auto', marginTop:'5%', color:'#4F2D26', marginBottom:'-5%'}}>9 rials</h1>
+    <div className={styles.center03} style={{marginTop:'-20vh', display:'flex', flexDirection:'column'}}>
+      <div style={{display:'flex', flexDirection:'column', marginLeft:'0%', marginTop:'95%'}}>
+       <img src="https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png" style={{width:'50vh', objectFit:"cover",maxWidth:"65vw", maxHeight:"55vh", overflow:'visible',position:'relative', left:'1%', mixBlendMode:''}}/>
+       <h2 style={{marginLeft:'auto',marginRight:'auto',marginTop:'5%', color:'#4F2D26', zIndex:5}}>1x 100ml Alcohol Free <br></br> Vanilla Extract</h2>
+       <h2 style={{marginLeft:'auto',marginRight:'auto', marginTop:'3%', color:'#4F2D26', marginBottom:'20%', opacity:.8}}>9 rials</h2>
        </div>
        <div style={{display:'flex', flexDirection:'column'}}>
-       <h2 className={styles.center1}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h2>
+       <h2 className={styles.center1111}  style={{width:"100%", marginLeft:'auto', marginRight:'auto',WebkitTextStroke: '1px 0b0e13',textShadow: '1px 1px 5px rgb(00 00 00/ 0%)', color:'#4F2D26', marginBottom:'20%' }}>"Here you can write whatever you want to write, a description, a quote, ingredients or whatever. "</h2>
        <button className={styles.card1} style={{marginLeft:'auto',marginRight:'auto',width:'70%'}} onClick={() => {
                       
                       const SB = {
                         id:3,
-                        Bname:"Signature Basboosa",
-                        Q:'9',
-                        Img:'https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1720456163488-A2973587-73CA-4598-99A9-D3F672FCDBA8.png'
+                        Bname:"100ml Vanilla Extract",
+                        Q:'10',
+                        Img:'https://app-uploads.krea.ai/29b1b1d2-a699-4245-91f5-2ef397c0ac1e/1708955534665-259934CB-712D-446F-AA1E-7F212D7429E8.png'
                       }
 
                       if (lsv() == "undefined") {
